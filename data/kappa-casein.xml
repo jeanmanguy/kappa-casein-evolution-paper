@@ -1,0 +1,1113 @@
+<TSeqs>
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>255661248</TSeq_gi>
+  <TSeq_accver>ACU25793.1</TSeq_accver>
+  <TSeq_taxid>9258</TSeq_taxid>
+  <TSeq_orgname>Ornithorhynchus anatinus</TSeq_orgname>
+  <TSeq_defline>kappa casein [Ornithorhynchus anatinus]</TSeq_defline>
+  <TSeq_length>167</TSeq_length>
+  <TSeq_sequence>MKTLLLVGAILAMTVGFSVAEEQKWKRLDSSESEERWWRLRLKPSLLFRVQDKPERNIPRPSYPYPLLNVPHPNAINPEHQRPYVLPRFNFQIPNILPFLMFPELPPPFFPIVHPIYYDPQTPTTPRNPPVTSQTPQPPVDSSANTPEPPTTAPLTATPEAQTPLQP</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>674032426</TSeq_gi>
+  <TSeq_accver>XP_008827812.1</TSeq_accver>
+  <TSeq_taxid>1026970</TSeq_taxid>
+  <TSeq_orgname>Nannospalax galili</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Nannospalax galili]</TSeq_defline>
+  <TSeq_length>187</TSeq_length>
+  <TSeq_sequence>MRNFILLVNILALTLPFLAAEVQNQDPACHGKEEYLYNQKRVLQIPIQSVLNSSPHYEPSYYQHRASMIVNPYKFYPYFVKLLLLRPPIQIVKWQFLPNIPQPVTAPYPIPHPQFLAIPTKENQDKPAIPATSPTLASPAFSTMAPAEPTPAPTVEPVVNTVVSSEASSGFINNSETSTVLTSSPVA</TSeq_sequence>
+</TSeq>
+
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>984137438</TSeq_gi>
+  <TSeq_accver>XP_015360737.1</TSeq_accver>
+  <TSeq_taxid>9994</TSeq_taxid>
+  <TSeq_orgname>Marmota marmota marmota</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Marmota marmota marmota]</TSeq_defline>
+  <TSeq_length>181</TSeq_length>
+  <TSeq_sequence>MKALILITTIMAIAVGVPVPQDQEREKRSCNKKIERLFDEKIVSYVPIHYVLNRNPHFEPNYYQRTPVASINNPYMIHPYSTKAFVHMSHAQIPQWHLVSTIPHPTMVQPHPYLHPSFMAIPPKKIQDKTTITANDVKNTIEPTPVPTDEPAVSTTVIPEAFSEFVNTPETTTVPVTSPVV</TSeq_sequence>
+</TSeq>
+
+
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>255661244</TSeq_gi>
+  <TSeq_accver>ACU25791.1</TSeq_accver>
+  <TSeq_taxid>9261</TSeq_taxid>
+  <TSeq_orgname>Tachyglossus aculeatus</TSeq_orgname>
+  <TSeq_defline>kappa casein [Tachyglossus aculeatus]</TSeq_defline>
+  <TSeq_length>165</TSeq_length>
+  <TSeq_sequence>MKTLLLVGGILVMTVCFSAAEDEEWKKVDYSESEERWLRLKRQPSFPFSFQGKPERNIPRPYYPRPFLNIPRPYTINPEHQFAYVFPNLKFQIPSVFPFPLEFLPPFYPFVHPIYYGPQTSTPPRNPTVTSQTPQPPVHSSANTPESATAAPVTATPMAQTPLQP</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>4559294</TSeq_gi>
+  <TSeq_accver>AAD22971.1</TSeq_accver>
+  <TSeq_taxid>9337</TSeq_taxid>
+  <TSeq_orgname>Trichosurus vulpecula</TSeq_orgname>
+  <TSeq_defline>kappa casein precursor [Trichosurus vulpecula]</TSeq_defline>
+  <TSeq_length>178</TSeq_length>
+  <TSeq_sequence>MKVLFLTVHILAVMVCFSTADLDWEKWPCDKQNERQSELRQQPLRRSPVQYVYTPYTHQSYVPVIYPPRAYVRHPYFSRVAWQKPYPSYMPLLPSIYPWSVVSRNLHPAFAFNPPHYAQLPVPSSPTNSPTTTIQTTNIPITNPTSTIVTPAVSSKSAATEDSAAAAMLTSPTAAQMA</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>617605017</TSeq_gi>
+  <TSeq_accver>XP_007523619.1</TSeq_accver>
+  <TSeq_taxid>9365</TSeq_taxid>
+  <TSeq_orgname>Erinaceus europaeus</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Erinaceus europaeus]</TSeq_defline>
+  <TSeq_length>177</TSeq_length>
+  <TSeq_sequence>MMRNLFLLLNILALTLPFLGAEVQNQEQPTCHEDDERTVNEKTVKFSPIYIPDRYFTSILYPARSAIANIYQYLPLPYYLKPVVVRSHAQISQRQNFQPPTIGRPQHLHPSLYVIRPKTTQASTVIPTTNTAATVEPTFVPTTEPTEQTSVTPQASSEFAITSTPETTTVPITSTVV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>1212216747</TSeq_gi>
+  <TSeq_accver>XP_021558108.1</TSeq_accver>
+  <TSeq_taxid>29088</TSeq_taxid>
+  <TSeq_orgname>Neomonachus schauinslandi</TSeq_orgname>
+  <TSeq_defline>kappa-casein [Neomonachus schauinslandi]</TSeq_defline>
+  <TSeq_length>182</TSeq_length>
+  <TSeq_sequence>MKSFFLVVKIVALALPFLGAEVQNQEQPTCHENDERPFNQKTAKYIPFHYVLNNYPLYEHTYYPHRPAVPINHQYVPYPYYAKPVAVRPHAQIPQWQVLPNAYPPTVVHRPHLHPSFIAIPTKKIQDKTGIPTINTIATAEPTLIPTTEPRVDTVVTSQAFTEFTIISTPETTTVPVTSPMV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>1195508802</TSeq_gi>
+  <TSeq_accver>XP_021067002.1</TSeq_accver>
+  <TSeq_taxid>10093</TSeq_taxid>
+  <TSeq_orgname>Mus pahari</TSeq_orgname>
+  <TSeq_defline>kappa-casein [Mus pahari]</TSeq_defline>
+  <TSeq_length>177</TSeq_length>
+  <TSeq_sequence>MMRNFIVVVNILALTLPFLAAEIQNPDSNCREKNDVVYDEQRVLYTPVRSILKLNPYEPNYYHYRSSMLVSPYMYYPLVRLLLLRSPVPISKWQPMPNFPQPAGVPHVIPSPSFLAMPTTENQDNTAIPTIDPITPIVSTPVPTVESMVNTVANPEASTVSINTPETATVSVSSTAA</TSeq_sequence>
+</TSeq>
+
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>1195722227</TSeq_gi>
+  <TSeq_accver>XP_021019496.1</TSeq_accver>
+  <TSeq_taxid>10089</TSeq_taxid>
+  <TSeq_orgname>Mus caroli</TSeq_orgname>
+  <TSeq_defline>kappa-casein [Mus caroli]</TSeq_defline>
+  <TSeq_length>179</TSeq_length>
+  <TSeq_sequence>MMRNFIVVVNILALTLPFLAAKVQNPDSNCRGENNDIVYDEQRVLYTPVRSVLNLNQYEPNYYHYRPSLPVGPYMYFPLVFRLLLLRSPAPISKWQPMPNFPQTAGVPHAIPNPSFLAMPTNENEDNTAIPTIDPITPIVSTPVPTMESMVNTVANPEASTVSINTPETTTVPVSSTAA</TSeq_sequence>
+</TSeq>
+
+
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>586524827</TSeq_gi>
+  <TSeq_accver>XP_006917371.1</TSeq_accver>
+  <TSeq_taxid>9402</TSeq_taxid>
+  <TSeq_orgname>Pteropus alecto</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Pteropus alecto]</TSeq_defline>
+  <TSeq_length>181</TSeq_length>
+  <TSeq_sequence>MMRFFLVVNILALTLPFLGAEVQNQERPTGCENNERSFNQNAVKFIPIHYALNNYLHSEPNYYQYRLASLINNQYMSYPYYAKSVTVRPHAQISQWQVLPNIYSSIVARHQYLHPSLIAVPSKKIQDKTVIPSINTIATVKPTLIPTPEPTVSSVVIPEASSDFVVSTPETTTVTITSSTV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>1012258563</TSeq_gi>
+  <TSeq_accver>XP_015978844.1</TSeq_accver>
+  <TSeq_taxid>9407</TSeq_taxid>
+  <TSeq_orgname>Rousettus aegyptiacus</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Rousettus aegyptiacus]</TSeq_defline>
+  <TSeq_length>181</TSeq_length>
+  <TSeq_sequence>MMRFFLVVNVLALTLPFLGAEVQNQEQPTGCENNERSFNQNAVRSIPIHYALKNYLYSEPNYYQYRLASLINNHYMSYPYYAKSVAVRPHAQISQWQVLPNIYPSIVARHQNLNPSFIAIPAKKIQDKTVIPSTNTIATAKPTFIPTPEPTVSTVVIPAVSSEFVISTPETTTVTITSSTV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>1060981464</TSeq_gi>
+  <TSeq_accver>XP_017825992.1</TSeq_accver>
+  <TSeq_taxid>9483</TSeq_taxid>
+  <TSeq_orgname>Callithrix jacchus</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Callithrix jacchus]</TSeq_defline>
+  <TSeq_length>180</TSeq_length>
+  <TSeq_sequence>MKSFLLVVNALALSLPFLAAEIQNQEQQACRENDERQLYQKIVPYIPIYYVPNSYPYYRTNWYQNRPAIAINSPYVSRPYYPNPVRPHAQVPQWQYLPNTHPATMVRHPKQHPSFIAIPPKKIQDKIIIPTINTITTVEPTPTPTTVTVVKRVITPEASSESIITSTPETTTVSVTTPTA</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>795383260</TSeq_gi>
+  <TSeq_accver>XP_011938314.1</TSeq_accver>
+  <TSeq_taxid>9531</TSeq_taxid>
+  <TSeq_orgname>Cercocebus atys</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Cercocebus atys]</TSeq_defline>
+  <TSeq_length>182</TSeq_length>
+  <TSeq_sequence>MKSFLLVVNVLALTLPFLAAEVQNQKQPACHENGERRFYQKTAPYVPMYYVPNSYPYYGTNLYQHRPAIAINNPYVPRTYYANPAVVRPHAQIPQRQYLPNSHLPTVVRRPNLHPSFIAIPPKKIQDKIIIPTINTITTVEPTPAPTIEPTVDNIVTPEDFSESIITSTPETTTVSVTTPTA</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>355749359</TSeq_gi>
+  <TSeq_accver>EHH53758.1</TSeq_accver>
+  <TSeq_sid>gnl|WGS:AEHL|EGM_14453</TSeq_sid>
+  <TSeq_taxid>9541</TSeq_taxid>
+  <TSeq_orgname>Macaca fascicularis</TSeq_orgname>
+  <TSeq_defline>Kappa-casein [Macaca fascicularis]</TSeq_defline>
+  <TSeq_length>182</TSeq_length>
+  <TSeq_sequence>MKSFLLVVNVLALTLPFLAAEVQNQKQPACHENGERRFYQKTAPYVPMYYVPNSYPYYGTNLYQHRPAIAINNPYVPRTYYANPAVVRPHAQIPQRQYLPNSHLPTVVRRPNLHPSFIAIPPKKIQDKIIIPTINTITTVEPTPAPTIEPTVDNVVTPEDFSESIITSTPETTTVSVTTPTA</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>109074586</TSeq_gi>
+  <TSeq_accver>XP_001095721.1</TSeq_accver>
+  <TSeq_taxid>9544</TSeq_taxid>
+  <TSeq_orgname>Macaca mulatta</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Macaca mulatta]</TSeq_defline>
+  <TSeq_length>182</TSeq_length>
+  <TSeq_sequence>MKSFLLVVNVLALTLPFLAAEVQNQKQPACHENGERRFYQKTAPYVPMYYVPNSYPYYGTNLYQHRPAIAINNPYVPRTYYANPAVVRPHAQIPQRQYLPNSHLPTVVRRPNLHPSFIAIPPKKIQDKIIIPTINTITTVEPTPAPTIEPTVDNVVTPEDFSESIITSTPETTTVSVTTPTA</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>795623958</TSeq_gi>
+  <TSeq_accver>XP_011732112.1</TSeq_accver>
+  <TSeq_taxid>9545</TSeq_taxid>
+  <TSeq_orgname>Macaca nemestrina</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Macaca nemestrina]</TSeq_defline>
+  <TSeq_length>182</TSeq_length>
+  <TSeq_sequence>MKSFLLVVNVLALTLPFLAAEVQNQKQPACHENGERRFYQKTAPYVPMYYVPNSYPYYGTNLYQHRPAIAINNPYVPRTYYANPAVVRPHAQIPQQQYLPNSHLPTVVRRPNLHPSFIAIPPKKIQDKIIIPTINTITTVEPTPAPTIEPTVDNVVTPEDFSESIITSTPETTTVSVTTPTA</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>402869633</TSeq_gi>
+  <TSeq_accver>XP_003898856.1</TSeq_accver>
+  <TSeq_taxid>9555</TSeq_taxid>
+  <TSeq_orgname>Papio anubis</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Papio anubis]</TSeq_defline>
+  <TSeq_length>182</TSeq_length>
+  <TSeq_sequence>MKSFLLVVNVLALTLPFLAAEVQNQKQPACHENGERRFYQKTAPYVPMYYVPNSYPYYGTNLYQHRPAIAINNPYVPRTYYANPAVVRPHAQIPQRQYLPNSHLPTVVRRPNLHPSFIAIPPKKLQDKIIIPTINTITTVEPTPAPTIEPTVDNVVTPEDFSESIITSTPETTTVSVTTPTA</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>795308736</TSeq_gi>
+  <TSeq_accver>XP_011823681.1</TSeq_accver>
+  <TSeq_taxid>9568</TSeq_taxid>
+  <TSeq_orgname>Mandrillus leucophaeus</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Mandrillus leucophaeus]</TSeq_defline>
+  <TSeq_length>182</TSeq_length>
+  <TSeq_sequence>MKSFLLVVNVLALTLPFLTAEVQNQKQPACHENDERRFYQKTAPYVPMYYVPNSYPYYGTNLYQHRQAIAINNPYVPRTYDANPAVVRPHAQIPQWQYLPNSHLPTVVRRPNLHPSFIAIPPKKIQDKIIIPTINTITTVEPTPAPTTEPTVDNVVTPEDFSESIITSTPETTTVSVTTPTA</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>426344545</TSeq_gi>
+  <TSeq_accver>XP_004038822.1</TSeq_accver>
+  <TSeq_taxid>9595</TSeq_taxid>
+  <TSeq_orgname>Gorilla gorilla gorilla</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Gorilla gorilla gorilla]</TSeq_defline>
+  <TSeq_length>182</TSeq_length>
+  <TSeq_sequence>MKSFLLVVNALALTLPFLAAEVQNQKQPACHENDERPFYQKTAPYVPMYYVPNSYPYYGTNLYQHRPAIAINNPYVPRTYYANPAVVRPHAQIPQRQYLPNSHPPTVVRRPNLHPSFIAIPPKKIQDKIIIPTINTIATVEPTPTPATEPRVDSVVTPEAFSESIITSTPETTTVSVTPPTA</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>397475232</TSeq_gi>
+  <TSeq_accver>XP_003809047.1</TSeq_accver>
+  <TSeq_taxid>9597</TSeq_taxid>
+  <TSeq_orgname>Pan paniscus</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Pan paniscus]</TSeq_defline>
+  <TSeq_length>182</TSeq_length>
+  <TSeq_sequence>MKSFLLVVNALALTLPFLAAEVQNQKQPACHENDERPFYQKTAPYVPMYYVPNSYPYYGTNLYQRRPAIAINNPYVPRTYYANPAVVRPHAQIPQRQYLPNSHPPTVVHRPNMHPSFIAIPPKKIQDKIIIPTINTIGTVEPTPTPATEPTVDSVVTSEAFSESIITSTPETTTVAVTPPTA</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>114594392</TSeq_gi>
+  <TSeq_accver>XP_001143538.1</TSeq_accver>
+  <TSeq_taxid>9598</TSeq_taxid>
+  <TSeq_orgname>Pan troglodytes</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Pan troglodytes]</TSeq_defline>
+  <TSeq_length>182</TSeq_length>
+  <TSeq_sequence>MKSFLLVVNALALTLPFLAAEVQNQKQPACHENDERPFYQKTAPYVPMYYVPNSYPYYGTNLYQRRPAIAINNPYVPRTYYANPAVVRPHAQIPQRQYLPNSHPPTVVHRPNLHPSFIAIPPKKIQDKIIIPTINTIATVEPTPTPATEPTVDSVVTPEAFSESIITSTPETTTVAVTPPTA</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>297673660</TSeq_gi>
+  <TSeq_accver>XP_002814873.1</TSeq_accver>
+  <TSeq_taxid>9601</TSeq_taxid>
+  <TSeq_orgname>Pongo abelii</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Pongo abelii]</TSeq_defline>
+  <TSeq_length>182</TSeq_length>
+  <TSeq_sequence>MKSFLLVVNALALTLPFLAAEVQNQKQPACHENDERPFYQKTAPYVPMYYMPNSYPYYGTNLYQRRPAIAINNPYVPHTYYANPAVVRPHAQIPQQQYLPNSHPPTVERRPNLHPSFIAIPPKKIQDKIIIPTINTIATVEPTPTPATELTADSVVTPEAFSESIITSTPETTTVSVTPPTA</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>29676</TSeq_gi>
+  <TSeq_accver>CAA47048.1</TSeq_accver>
+  <TSeq_taxid>9606</TSeq_taxid>
+  <TSeq_orgname>Homo sapiens</TSeq_orgname>
+  <TSeq_defline>kappa casein [Homo sapiens]</TSeq_defline>
+  <TSeq_length>182</TSeq_length>
+  <TSeq_sequence>MKSFLLVVNALALTLPFLAVEVQNQKQPACHENDERPFYQKTAPYVPMYYVPNSYPYYGTNLYQRRPAIAINNPYVPRTYYANPAVVRPHAQIPQRQYLPNSHPPTVVRRPNLHPSFIAIPPKKIQDKIIIPTINTIATVEPTPAPATEPTVDSVVTPEAFSESIITSTPETTTVAVTPPTA</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>545521723</TSeq_gi>
+  <TSeq_accver>XP_005628326.1</TSeq_accver>
+  <TSeq_taxid>9615</TSeq_taxid>
+  <TSeq_orgname>Canis lupus familiaris</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein isoform X1 [Canis lupus familiaris]</TSeq_defline>
+  <TSeq_length>185</TSeq_length>
+  <TSeq_sequence>MMKRFFLVVNIVALALPFLQGAEVQNQEQPTCRENDERLFNQKTVKYIPIHYVLNSFSHYEPNYYPHRPAEPINHQYVPYPFYAKPAVAVRTHAQIPQWQVLPNAYPPTMMHRPQLHPSFIAIPPKKIQDKTSIPTINTIATAEATPIPLTEPKVNTAVTSDASSEFTITSTPETTTVPVTSPVV</TSeq_sequence>
+</TSeq>
+
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>1126262988</TSeq_gi>
+  <TSeq_accver>XP_019655515.1</TSeq_accver>
+  <TSeq_taxid>9646</TSeq_taxid>
+  <TSeq_orgname>Ailuropoda melanoleuca</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein isoform X1 [Ailuropoda melanoleuca]</TSeq_defline>
+  <TSeq_length>201</TSeq_length>
+  <TSeq_sequence>MEENEGIPFDLRNKREGAMMKSFFLVVNIVALALPFLQGAEVQNQEQPTCCENDERLSNQKTAKYIPFHYVLNNYPRYEPAYYAHRPAVPINHQYVPYPYYAKPVAVRPYAQIPQWQVLPNAYLPTVVHRPHIHPSFIAIPPKKIQDKTGIPTINTVATAEPTFIPATEPLNTVVTSDASSEFTISSTPEATAVPVTSPVV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>1124008234</TSeq_gi>
+  <TSeq_accver>XP_019612636.1</TSeq_accver>
+  <TSeq_taxid>89399</TSeq_taxid>
+  <TSeq_orgname>Rhinolophus sinicus</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Rhinolophus sinicus]</TSeq_defline>
+  <TSeq_length>194</TSeq_length>
+  <TSeq_sequence>MSVDGTEEGDKGATMSFFLVVTILALTMPFLGAEVQNQEQPTCCENNERLFDQYTVKYIPIQYVLNSYPPFEHNSYQYRPAVPINNQYMPYPYYAKLVAFRPRVQIPQRQILPNIYPRNVVHHSYQHPSFIAVPPKKTQDKTVIPNINTIATVNPTIIPTTESMVSTGVTPKPSSEFITSIPETTTVTLVSSMV</TSeq_sequence>
+</TSeq>
+
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>1246240428</TSeq_gi>
+  <TSeq_accver>XP_022417415.1</TSeq_accver>
+  <TSeq_taxid>9749</TSeq_taxid>
+  <TSeq_orgname>Delphinapterus leucas</TSeq_orgname>
+  <TSeq_defline>kappa-casein isoform X1 [Delphinapterus leucas]</TSeq_defline>
+  <TSeq_length>187</TSeq_length>
+  <TSeq_sequence>MLLGAMMKSFYLVVTILALTLPFLSAEGQNQEQSTRCENDERLFKEKTVKYILIHYVLSRYPSYGLNYYQHRPAVLINNQFMPYPYYAKPVAVRPHAQIPQWQFLPNIYPPTVAHHPHPRPSFLAIPPKKTQDKTVIPIISTIATVEPTLIPTTEPIVNTVVTPEASSEFIMSTPETTTVQVTSPVT</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>1244101367</TSeq_gi>
+  <TSeq_accver>XP_022361327.1</TSeq_accver>
+  <TSeq_taxid>391180</TSeq_taxid>
+  <TSeq_orgname>Enhydra lutris kenyoni</TSeq_orgname>
+  <TSeq_defline>kappa-casein [Enhydra lutris kenyoni]</TSeq_defline>
+  <TSeq_length>182</TSeq_length>
+  <TSeq_sequence>MKSFFLIVNIVALALPFLGAEGQNQEQPTCHKNDESLFNQKIAKYIPFHYVLNNFPRYEPTYYPHIPAVPINHQYVPYPLYAKPVAVRPHAQIPQWQVLPNAYPPTVVHPPHLHPSFIAITPKMIQDKTGIPTINTIASVEPTFIPTTEPTVNTVVTSDASSEFTITSTPETTTIPVTSPMV</TSeq_sequence>
+</TSeq>
+
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>859857021</TSeq_gi>
+  <TSeq_accver>XP_012918859.1</TSeq_accver>
+  <TSeq_taxid>9669</TSeq_taxid>
+  <TSeq_orgname>Mustela putorius furo</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein isoform X1 [Mustela putorius furo]</TSeq_defline>
+  <TSeq_length>184</TSeq_length>
+  <TSeq_sequence>MMKSFFLVVNIVALAVPFLQGAEVQNQEQPTCRKNDESLFNQKIAKYIPFHYVLNNYPRYEPTYYPHIPVVPINHQYVPYPFYAKPVAVRPHAQIPQWQVLPNAFPPTVVRPPHLHPSLNTITPKKIQAKTGIPTINTIASVEPTFIPTTEPTVNTVVTSDASSEFTITSTPETTTIPVTSPTV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>410957476</TSeq_gi>
+  <TSeq_accver>XP_003985353.1</TSeq_accver>
+  <TSeq_taxid>9685</TSeq_taxid>
+  <TSeq_orgname>Felis catus</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Felis catus]</TSeq_defline>
+  <TSeq_length>182</TSeq_length>
+  <TSeq_sequence>MKTFFLVVNILALTLPFLGAQVQNQEQPTCRENDERLLNQKTAKYIPVHYVLSNYPHYEPSYYPHKPAVPVNNQYMPYPYYAKPVAVRPHVQIPQWQVLPNTYTPTVVRHPHLPASFIAIPPKKIQDKTGNPTINTIATAELTLTPTTEPIVNTVVTTEASSEFTITSTPETTTVPVASTMV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>1111079331</TSeq_gi>
+  <TSeq_accver>XP_019319124.1</TSeq_accver>
+  <TSeq_taxid>9691</TSeq_taxid>
+  <TSeq_orgname>Panthera pardus</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Panthera pardus]</TSeq_defline>
+  <TSeq_length>182</TSeq_length>
+  <TSeq_sequence>MKTFFLVVNILALTLPFLGAQVQNQEQPTCRENDERLLNQKTAKYIPVHYVLSNYPHYEPNYYPHKPAVPVNNQYMPYPYYAKPVAVRPHVQISQWQVLPNTYTPTVVRHPHLPASFIVIPPKKIQDKTGNPTINTIATAEPTLTPTTEPIVNTVVTTEASSEFTITSTPETTTVPVTSTMV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>472346437</TSeq_gi>
+  <TSeq_accver>XP_004392948.1</TSeq_accver>
+  <TSeq_taxid>9708</TSeq_taxid>
+  <TSeq_orgname>Odobenus rosmarus divergens</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Odobenus rosmarus divergens]</TSeq_defline>
+  <TSeq_length>183</TSeq_length>
+  <TSeq_sequence>MMKSFFLVVNIVALALPFLGAEVQNQAQPTCRENDERPFNQKTAKYIPFHYVLNNYPRYEHTYYPHRPAVPINHQYVPYPYYAKPVVFWPHAQIPQWQVLPNAYPPTVVHRPHLHPSFIAIPAKKIQDKTSIPTINTITTAEPTLIPTTEPRVDTVVTSEAFSEYTITSTPETTTVPVTSPMV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>585154038</TSeq_gi>
+  <TSeq_accver>XP_006729385.1</TSeq_accver>
+  <TSeq_taxid>9713</TSeq_taxid>
+  <TSeq_orgname>Leptonychotes weddellii</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Leptonychotes weddellii]</TSeq_defline>
+  <TSeq_length>182</TSeq_length>
+  <TSeq_sequence>MKSFFLVVKIVALALPFLGAEVQNQEQPTCHENDERPFNQKTAKYIPFHYVLNNYPLYEHTYYPHRPAVPINHQYVPYPYYAKPVAVRPHAQIPQWQVLPNAYPLTVVHRPHLHPSFTAIPAKKIQDKTGIPTINTIATAEPTLIPTTEPRVDTVVTSEAFTEFTITSTPETTTVPVTSPMV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>466001209</TSeq_gi>
+  <TSeq_accver>XP_004268387.1</TSeq_accver>
+  <TSeq_taxid>9733</TSeq_taxid>
+  <TSeq_orgname>Orcinus orca</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein isoform X2 [Orcinus orca]</TSeq_defline>
+  <TSeq_length>182</TSeq_length>
+  <TSeq_sequence>MMKSFCLVVTILALTLPFLSAEGQNQEQSTRCENDERLFKEKTVKYIPIHYVLSRYPSYGLNYYQHRPAVLINNQFMPYPYYAKPVEVRPHAQIPQWQFLSNIYPPTVAHHPHPRPSFLAIPPKKTQDKAVIPIISTIATDEPTLIPTTEPIVNTVVTPEASSEFITSTPETTTVQVTSPVV</TSeq_sequence>
+</TSeq>
+
+
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>470658938</TSeq_gi>
+  <TSeq_accver>XP_004331322.1</TSeq_accver>
+  <TSeq_taxid>9739</TSeq_taxid>
+  <TSeq_orgname>Tursiops truncatus</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein isoform X2 [Tursiops truncatus]</TSeq_defline>
+  <TSeq_length>182</TSeq_length>
+  <TSeq_sequence>MMKSFYLVVTILALTLPFLSAEGQNQEQSTRCENDERLFKEKAVKYIPIHYVLSRYPSYGLNYYQHRPAVLINNQFMPYPYYAKPVEVRPHAQIPQWQFLPNIYPPTVAHHPHPRPSFLAIPPKKTQDKTVIPIISTIATDEPTLIPTTEPIVNTVVTPEASSEFITSTPETTTVQVTSPVV</TSeq_sequence>
+</TSeq>
+
+
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>593761147</TSeq_gi>
+  <TSeq_accver>XP_007119258.1</TSeq_accver>
+  <TSeq_taxid>9755</TSeq_taxid>
+  <TSeq_orgname>Physeter catodon</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Physeter catodon]</TSeq_defline>
+  <TSeq_length>181</TSeq_length>
+  <TSeq_sequence>MKSFLLVVTILALTLPFLSAEGQNQEQSTRCENDERLFNKKTVKYIPIHYVLSRYPSYGLNYYQHRPVALINNQFMPYLYYAKPVVVSPHAQIPQWQFLPNIHPPTLAHHPHPRPSFTAIPPKKTQDKTAIPIINTIATVEPTLIPTTEPIVNTVVTPEASSEFITSTPETTTVQVASPVA</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>731494712</TSeq_gi>
+  <TSeq_accver>XP_010592494.1</TSeq_accver>
+  <TSeq_taxid>9785</TSeq_taxid>
+  <TSeq_orgname>Loxodonta africana</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Loxodonta africana]</TSeq_defline>
+  <TSeq_length>178</TSeq_length>
+  <TSeq_sequence>MKGFLLVVNILLLPLPFLAAEVQNQEESRCLEKDERWFCQKAVKYIPNDYVLKSYYRYEPNYNQFRAAVPINNPYLIYLYPAKQVAVRPHTQIPQWQVPSNIYPSPSVPHTYLKPPFIVIPPKKTQDKPIIPPTGTVASIEATVEPKVNTVVNAEASSEFIATNTPEATTVPVISPQI</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>958718360</TSeq_gi>
+  <TSeq_accver>XP_014702750.1</TSeq_accver>
+  <TSeq_taxid>9793</TSeq_taxid>
+  <TSeq_orgname>Equus asinus</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Equus asinus]</TSeq_defline>
+  <TSeq_length>182</TSeq_length>
+  <TSeq_sequence>MKSFFLVVNILALTLPFLGAEVQNQEQPTCRKNDERFFDLKTVKYIPIYYVLNSSPRNEPIYYQHRLAVLINNQHMPYQYYARPAAVRPHVQIPQWQVLPNIYPSTVVRHPRPHPSFIAIPPKKLQEKTVIPKINTIATVEPTPIPTPEPTVNNAVIPDASSEFIIASTPETTTVPVTSPVV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>19031197</TSeq_gi>
+  <TSeq_accver>AAK83669.1</TSeq_accver>
+  <TSeq_taxid>9796</TSeq_taxid>
+  <TSeq_orgname>Equus caballus</TSeq_orgname>
+  <TSeq_defline>kappa casein [Equus caballus]</TSeq_defline>
+  <TSeq_length>185</TSeq_length>
+  <TSeq_sequence>MKSFFLVVNILALTLPFLGAEVQNQEQPTCHKNDERFFDLKTVKYIPIYYVLNSSPRYEPIYYQHRLALLINNQHMPYQYYARPAAVRPHVQIPQWQVLPNIYPSTVVRHPCPHPSFIAIPPKKLQEITVIPKINTIATVEPTPIPTPEPTVNNAVIPDASSEFIIASTPETTTVPVTSPVVQKL</TSeq_sequence>
+</TSeq>
+
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>55742766</TSeq_gi>
+  <TSeq_accver>NP_001004026.1</TSeq_accver>
+  <TSeq_taxid>9823</TSeq_taxid>
+  <TSeq_orgname>Sus scrofa</TSeq_orgname>
+  <TSeq_defline>kappa-casein precursor [Sus scrofa]</TSeq_defline>
+  <TSeq_length>188</TSeq_length>
+  <TSeq_sequence>MMKSSFLIVPILALTLPFLGAEEQNQEKLTRCESDKRLFNEEKVKYIPIYYMLNRFPSYGFFYQHRSAVSPNRQFIPYPYYARPVVAGPHAQKPQWQDQPNVYPPTVARRPRPHASFIAIPPKKNQDKTAIPAINSIATVEPTIVPATEPIVNAEPIVNAVVTPEASSEFLITSAPETTTVQVTSPVV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>429534184</TSeq_gi>
+  <TSeq_accver>CCI79380.1</TSeq_accver>
+  <TSeq_taxid>9837</TSeq_taxid>
+  <TSeq_orgname>Camelus bactrianus</TSeq_orgname>
+  <TSeq_defline>kappa casein [Camelus bactrianus]</TSeq_defline>
+  <TSeq_length>182</TSeq_length>
+  <TSeq_sequence>MKSFFLVVTILALTLPFLGAEVQNQEQPTCCEKVERLLNEKTVKYFPIQFVQSRYPSYGINYYQHRLAVPINNQFIPYPNYAKPVAIRLHAQIPQCQALPNIDPPTVERRPRPRPSFIAIPPKKTQDKTVNPAINTVATVEPPVIPTAEPAVNTVVIAEASSEFITTSTPETTTVQITSTEI</TSeq_sequence>
+</TSeq>
+
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>1742992</TSeq_gi>
+  <TSeq_accver>CAA71171.1</TSeq_accver>
+  <TSeq_taxid>9838</TSeq_taxid>
+  <TSeq_orgname>Camelus dromedarius</TSeq_orgname>
+  <TSeq_defline>kappa casein [Camelus dromedarius]</TSeq_defline>
+  <TSeq_length>182</TSeq_length>
+  <TSeq_sequence>MKSFFLVVTILALTLPFLGAEVQNQEQPTCFEKVERLLNEKTVKYFPIQFVQSRYPSYGINYYQHRLAVPINNQFIPYPNYAKPVAIRLHAQIPQCQALPNIDPPTVERRPRPRPSFIAIPPKKTQDKTVNPAINTVATVEPPVIPTAEPAVNTVVIAEASSEFITTSTPETTTVQITSTEI</TSeq_sequence>
+</TSeq>
+
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>787034497</TSeq_gi>
+  <TSeq_accver>CDW16864.1</TSeq_accver>
+  <TSeq_taxid>9844</TSeq_taxid>
+  <TSeq_orgname>Lama glama</TSeq_orgname>
+  <TSeq_defline>kappa-casein [Lama glama]</TSeq_defline>
+  <TSeq_length>188</TSeq_length>
+  <TSeq_sequence>MLLGAIMKSFFLVVTILALTLPFLGAEVQNQEQPTCCEKVERLLNEKTVKYFPIQFVQSRYPSYGINYYQHRLAVPINNQFIPYPNYAKPVAIRLHAQIPQCQALPNIDPPTVERRPRPRPSFIAIPPKKTQDKTVIPAINTVATVEPPVIPTAEPVVNTVVIAEASSEFITTSTPETTTVQITSTEI</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>295705</TSeq_gi>
+  <TSeq_accver>BAA03288.1</TSeq_accver>
+  <TSeq_taxid>9863</TSeq_taxid>
+  <TSeq_orgname>Cervus nippon</TSeq_orgname>
+  <TSeq_defline>kappa-casein precursor [Cervus nippon]</TSeq_defline>
+  <TSeq_length>190</TSeq_length>
+  <TSeq_sequence>MMKSFFLAVTILALTLPFLVAQEQIQEQPTGCEKDERFFNDKIVKYIPIQYALSRYPSYGLNYYQHRPVALINNQFLPYPYYVKPGAVRSPAQILQWQVLPNTVPAKFCQAQPTTMARHPHPRLSFMAIPPKKNQDKTDIPSINTIATAESTITPTTEAIVDTVATQEAFSEVIESAPEAKTDQVTSTVV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>1187550739</TSeq_gi>
+  <TSeq_accver>XP_020729185.1</TSeq_accver>
+  <TSeq_taxid>9880</TSeq_taxid>
+  <TSeq_orgname>Odocoileus virginianus texanus</TSeq_orgname>
+  <TSeq_defline>kappa-casein [Odocoileus virginianus texanus]</TSeq_defline>
+  <TSeq_length>190</TSeq_length>
+  <TSeq_sequence>MMKSFSLVVTILALTLPFLVAQEQNQEQPTGCEKDERFFNDKIVKYIPIQYVLSRYPSYGLSYYQHRPVALINNQFLPYPYYAKPGAVRSPAQILQWQVLPNTVPAKSCQAQPTTLARHPHPRLSFMAIPPKKNQDKTDIPTINTIATVESTITPTTEAIVDTVATPEASSEVIESAPETKTDQVTSTVV</TSeq_sequence>
+</TSeq>
+
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>1228078</TSeq_gi>
+  <TSeq_accver>CAA33034.1</TSeq_accver>
+  <TSeq_taxid>9913</TSeq_taxid>
+  <TSeq_orgname>Bos taurus</TSeq_orgname>
+  <TSeq_defline>kappa-casein [Bos taurus]</TSeq_defline>
+  <TSeq_length>190</TSeq_length>
+  <TSeq_sequence>MMKSFFLVVTILALTLPFLGAQEQNQEQPIRCEKDERFFSDKIAKYIPIQYVLSRYPSYGLNYYQQKPVALINNQFLPYPYYAKPAAVRSPAQILQWQVLSNTVPAKSCQAQPTTMARHPHPHLSFMAIPPKKNQDKTEIPTINTIASGEPTSTPTTEAVESTVATLEDSPEVIESPPEINTVQVTSTAV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>978</TSeq_gi>
+  <TSeq_accver>CAA43174.1</TSeq_accver>
+  <TSeq_taxid>9925</TSeq_taxid>
+  <TSeq_orgname>Capra hircus</TSeq_orgname>
+  <TSeq_defline>kappa casein [Capra hircus]</TSeq_defline>
+  <TSeq_length>192</TSeq_length>
+  <TSeq_sequence>MMKSFFLVVTILALTLPFLGAQEQNQEQPICCEKDERFFDDKIAKYIPIQYVLSRYPSYGLNYYQQRPVALINNQFLPYPYYAKPVAVRSPAQTLQWQVLPNTVPAKSCQDQPTTLARHPHPHLSFMAIPPKKDQDKTEVPAINTIASAEPTVHSTPTTEAIVNTVDNPEASSESIASASETNTAQVTSTEV</TSeq_sequence>
+</TSeq>
+
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>57164381</TSeq_gi>
+  <TSeq_accver>NP_001009378.1</TSeq_accver>
+  <TSeq_taxid>9940</TSeq_taxid>
+  <TSeq_orgname>Ovis aries</TSeq_orgname>
+  <TSeq_defline>kappa-casein precursor [Ovis aries]</TSeq_defline>
+  <TSeq_length>192</TSeq_length>
+  <TSeq_sequence>MMKSFFLVVTILALTLPFLGAQEQNQEQRICCEKDERFFDDKIAKYIPIQYVLSRYPSYGLNYYQQRPVALINNQFLPYPYYAKPVAVRSPAQTLQWQVLPNAVPAKSCQDQPTAMARHPHPHLSFMAIPPKKDQDKTEIPAINTIASAEPTVHSTPTTEAVVNAVDNPEASSESIASAPETNTAQVTSTEV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>295703</TSeq_gi>
+  <TSeq_accver>BAA03287.1</TSeq_accver>
+  <TSeq_taxid>9966</TSeq_taxid>
+  <TSeq_orgname>Capricornis crispus</TSeq_orgname>
+  <TSeq_defline>kappa-casein precursor [Capricornis crispus]</TSeq_defline>
+  <TSeq_length>192</TSeq_length>
+  <TSeq_sequence>MMKSFFLAVTILALTLPFLGAQEQNQEQPICCEKDETFFDDKIAKYIPIQYVLSRYPSYGLNYYQQRPVALINNQFLPYPYYAKPVAVRSPAQTLQWQVLPNTVPAKSCQDQPTTMARHPHPHLSFMAIPPKKDQDKTEIPTINTIASAEPTVHSTPTTEAIVNTVDNPEASSESIVSAPETNTAQVTSTEV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>1048452318</TSeq_gi>
+  <TSeq_accver>XP_017498116.1</TSeq_accver>
+  <TSeq_taxid>9974</TSeq_taxid>
+  <TSeq_orgname>Manis javanica</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Manis javanica]</TSeq_defline>
+  <TSeq_length>186</TSeq_length>
+  <TSeq_sequence>MMKSFFLVVNILALTLPFLGAEVPSQEQPACRENDERLLNQKTVEYIPVHYVLNSLNSSPFYEHNYYRYRPAVLVSNQNMPYPYYGKPAALRVLTQIPQWPILPIIYTPTVVHHPRPQSSLIAIPPKKIQDKTVIRTINTIATVEPTLIPPIEPTVDSAVTPEALSEFTVTSTPETTTVAGTSFIV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>504173483</TSeq_gi>
+  <TSeq_accver>XP_004596310.1</TSeq_accver>
+  <TSeq_taxid>9978</TSeq_taxid>
+  <TSeq_orgname>Ochotona princeps</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Ochotona princeps]</TSeq_defline>
+  <TSeq_length>185</TSeq_length>
+  <TSeq_sequence>MMKHFLLVLNVLALTLPFLAAEIVQSQEQPTCHENEEKVLNQKAVPYVPFYFVMSRFLPYEPNFYQHRTAVPTFSPFMLNPYYIKPIVVKPNMQVPQWQTLPNVHQPTVAHHSRRHPLIMAIRPNKVQEENIIPTVNTVAAEEPTPVSSTEPLVNAEVVTEASPEFISSPEPATAAVAPSTAEEQ</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>1607</TSeq_gi>
+  <TSeq_accver>CAA79145.1</TSeq_accver>
+  <TSeq_taxid>9986</TSeq_taxid>
+  <TSeq_orgname>Oryctolagus cuniculus</TSeq_orgname>
+  <TSeq_defline>kappa-casein [Oryctolagus cuniculus]</TSeq_defline>
+  <TSeq_length>180</TSeq_length>
+  <TSeq_sequence>MMKHFLLVVNILAVTLPFLAADIQNQEQTTCRENEERLFHQVTAPYIPVHYVMNRYPQYEPSYYLRRQAVPTLNPFMLNPYYVKPIVFKPNVQVPHWQILPNIHQPKVGRHSHPFFMAILPNKMQDKAVTPTTNTIAAVEPTPIPTTEPVVSTEVIAEASPELIISPETTTEATAASAAA</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>852759962</TSeq_gi>
+  <TSeq_accver>XP_012875533.1</TSeq_accver>
+  <TSeq_taxid>10020</TSeq_taxid>
+  <TSeq_orgname>Dipodomys ordii</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Dipodomys ordii]</TSeq_defline>
+  <TSeq_length>188</TSeq_length>
+  <TSeq_sequence>MMKSFLLAVNILALTLPFLAAQVQHQEPACHKNDGRLFEQKKVLYIPIHYVLRNNPLLQPNFYQRIVPINSPYMPFPYYAVNNLPYTYSTKQLLLGPHVQIAKWQALPNIFQPTTEHQTFQHASFIATPPQKNQDENTVLPIDNTATVEPTQVSATEVAAHIVEIPQASSELDNTPETTVVPVTPTAA</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>75677412</TSeq_gi>
+  <TSeq_accver>NP_031812.2</TSeq_accver>
+  <TSeq_taxid>10090</TSeq_taxid>
+  <TSeq_orgname>Mus musculus</TSeq_orgname>
+  <TSeq_defline>kappa-casein precursor [Mus musculus]</TSeq_defline>
+  <TSeq_length>181</TSeq_length>
+  <TSeq_sequence>MMRNFIVVVNILALTLPFLAAEIQNPDSNCRGEKNDIVYDEQRVLYTPVRSVLNFNQYEPNYYHYRPSLPATASPYMYYPLVVRLLLLRSPAPISKWQSMPNFPQSAGVPYAIPNPSFLAMPTNENQDNTAIPTIDPITPIVSTPVPTMESIVNTVANPEASTVSINTPETTTVPVSSTAA</TSeq_sequence>
+</TSeq>
+
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>13928762</TSeq_gi>
+  <TSeq_accver>NP_113750.1</TSeq_accver>
+  <TSeq_taxid>10116</TSeq_taxid>
+  <TSeq_orgname>Rattus norvegicus</TSeq_orgname>
+  <TSeq_defline>kappa-casein precursor [Rattus norvegicus]</TSeq_defline>
+  <TSeq_length>178</TSeq_length>
+  <TSeq_sequence>MMRNFIVVMNILALTLPFLAAEVQNPDSNCREKNEVVYDVQRVLYTPVSSVLNRNHYEPIYYHYRTSVPVSPYAYFPVGLKLLLLRSPAQILKWQPMPNFPQPVGVPHPIPNPSFLAIPTNEKHDNTAIPASNTIAPIVSTPVSTTESVVNTVANTEASTVPISTPETATVPVTSPAA</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>507713885</TSeq_gi>
+  <TSeq_accver>XP_004647980.1</TSeq_accver>
+  <TSeq_taxid>10160</TSeq_taxid>
+  <TSeq_orgname>Octodon degus</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Octodon degus]</TSeq_defline>
+  <TSeq_length>185</TSeq_length>
+  <TSeq_sequence>MMKTFLLVVNIVALTLPFLAAEVQNQEQLACWENDERLFNQKKVLYGLSNPVLNTYLHNALNYYQNRAMVPINNPCVCHPYYAQSFVLQPQAQASKWPVLTNIPQPTIRHHPTKFPSFMVILSKRAPEKATILATETIAAPTPTPVTAAAEITASPADILEVPSEFVRAPETTTVPATSPIAQEQ</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>351699116</TSeq_gi>
+  <TSeq_accver>EHB02035.1</TSeq_accver>
+  <TSeq_sid>gnl|WGS:AFSB|GW7_16860</TSeq_sid>
+  <TSeq_taxid>10181</TSeq_taxid>
+  <TSeq_orgname>Heterocephalus glaber</TSeq_orgname>
+  <TSeq_defline>Kappa-casein [Heterocephalus glaber]</TSeq_defline>
+  <TSeq_length>180</TSeq_length>
+  <TSeq_sequence>MKRFLLVVNILALAVPFLAAEVPNQEQSACCENDERLFNQKKVLYILSHPVLNNYLHNARNYYQNRAVVPINNPYKCDPYYAQSFVFRPQAPIPQWSVLTNAHQFTMLHRPTKYPSFMVIPARKIPEEAAIPTTDTMATLEPTPVPVAEPATNTADFSGASAKFVHTPETSTVPATSPMA</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>126330606</TSeq_gi>
+  <TSeq_accver>XP_001367548.1</TSeq_accver>
+  <TSeq_taxid>13616</TSeq_taxid>
+  <TSeq_orgname>Monodelphis domestica</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein isoform X1 [Monodelphis domestica]</TSeq_defline>
+  <TSeq_length>178</TSeq_length>
+  <TSeq_sequence>MKVLFLIGHILLAMVCFSTAELDWRKWPCEKQMERPSELEQQPPGQPPVQDVYTRYTRQIYVPILYAPKTSIQYPYFSKLAWQRPYAAYIPLLSSRYPWPVIPRSPHPSFAFNPPQYARVPAPSGPTSSPAAPMETTTIPSTSTVAATVTPDATSKFVTTEYSTTATIPTSPIPEQQP</TSeq_sequence>
+</TSeq>
+
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>671001068</TSeq_gi>
+  <TSeq_accver>XP_008691397.1</TSeq_accver>
+  <TSeq_taxid>29073</TSeq_taxid>
+  <TSeq_orgname>Ursus maritimus</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Ursus maritimus]</TSeq_defline>
+  <TSeq_length>181</TSeq_length>
+  <TSeq_sequence>MKSFFLVVNIVALALPFLGAEVQNQEQPTCRENDERLPNQKTAKYIPFHYVLNNYPHYEPAYYPHRPAVPINHQYVPYPYYAKPVAVRPYAQIPQWQVLPNAYPPTVVHRPHLHPSFIAIPPKKIQDKTGTPTINTAATAEPTFIPTTESLNTVVTSDALSEFIITSIPETTAVPVTSPVV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>641730880</TSeq_gi>
+  <TSeq_accver>XP_008155708.1</TSeq_accver>
+  <TSeq_taxid>29078</TSeq_taxid>
+  <TSeq_orgname>Eptesicus fuscus</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Eptesicus fuscus]</TSeq_defline>
+  <TSeq_length>183</TSeq_length>
+  <TSeq_sequence>MKSFFLVLNILAFILPFLGAEVQNQKQPTCRETDRRLFDQSTVKYIPIHYAWKSYPRIAPNYYQYRPAVPINNQYMPYPYYTKPVLIRPHAQIPQWQALPNIYPPTLVRHPYLHPSLISIPPKKNQDKADIPTDNTIAAVEPILIPPSEPTVSTVATQEASSQIITNTPETTTDTITSPTPVV</TSeq_sequence>
+</TSeq>
+
+ <TSeq>
+ <TSeq_seqtype value="protein"/>
+  <TSeq_gi>440904989</TSeq_gi>
+  <TSeq_accver>ELR55439.1</TSeq_accver>
+  <TSeq_sid>gnl|WGS:AGSK|M91_14598</TSeq_sid>
+  <TSeq_taxid>72004</TSeq_taxid>
+  <TSeq_orgname>Bos mutus</TSeq_orgname>
+  <TSeq_defline>Kappa-casein [Bos mutus]</TSeq_defline>
+  <TSeq_length>194</TSeq_length>
+  <TSeq_sequence>MMKSFFLVVTILALTLPFLGAQEQNQEQPIRCEKDERFFSDKIAKYIPIQYVLSRYPSYGLNYYQQKPVALINNQFLPYPYYAKPAAVRSPAQILQWQVLSNTVPAKSCQAQPTTMARHPHPHLSFMAIPPKKNQDKTEIPTINTIASGEPTSTPTTEAVESTVATLEASPEASPEVIESPPEINTVQVTSTAV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>560980638</TSeq_gi>
+  <TSeq_accver>XP_006212566.1</TSeq_accver>
+  <TSeq_taxid>30538</TSeq_taxid>
+  <TSeq_orgname>Vicugna pacos</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein isoform X2 [Vicugna pacos]</TSeq_defline>
+  <TSeq_length>182</TSeq_length>
+  <TSeq_sequence>MKSFFLVVTILALTLPFLGAEVQNQEQPTCCEKVERLLNEKTVKYFPIQFVQSRYPSYGINYYQHRLAVPINNQFIPYPNYAKPVAIRLHAQIPQCQALPNIDPPTVERRPRPRPSFIAIPPKKTQDKTVIPAINTVATAEPPVIPTAEPVVNTVVIAEASSEFITTSTPETTTVQITSTEI</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>395857266</TSeq_gi>
+  <TSeq_accver>XP_003801026.1</TSeq_accver>
+  <TSeq_taxid>30611</TSeq_taxid>
+  <TSeq_orgname>Otolemur garnettii</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Otolemur garnettii]</TSeq_defline>
+  <TSeq_length>227</TSeq_length>
+  <TSeq_sequence>MKNFLLVVNVLALTLPFLAAEVQNQEKPACHENNERLFNQKTVSYDPVYYMLSSYPHYEPYFYRHRLAILINRPYIPYTYYAKPVVLKPHAQVSQWQALPSIHAPTMARVPHRPASFIAIPPRKIQHKAPIPTTPTITTTATAEPTPIPATDPAATSVVTPETSSVSAVTNTLEAAAVTVTPEASSVSAITNTLEAAAVTVTPEASSVSAVTNTLEAAAVTVTANVA</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>961710667</TSeq_gi>
+  <TSeq_accver>XP_014932397.1</TSeq_accver>
+  <TSeq_taxid>32536</TSeq_taxid>
+  <TSeq_orgname>Acinonyx jubatus</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Acinonyx jubatus]</TSeq_defline>
+  <TSeq_length>182</TSeq_length>
+  <TSeq_sequence>MKTFFLVVNILALTLPFLGAQVQNQEQPTCRENDERLLNQKTAKYIPVHYVLSNYPHYEPSYYPHKPAVPVNNQYMPYPYYAKPVAVRPHVQIPQWQVLPNTYTPTVVRHPHLPASFIAIPPKKIQDKTGNPTINTIATTEPTLTPTTEPIVNTVVTTEASSEFTITSTPETTTVPVASTMV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>1033203</TSeq_gi>
+  <TSeq_accver>BAA06883.1</TSeq_accver>
+  <TSeq_taxid>34865</TSeq_taxid>
+  <TSeq_orgname>Capricornis sumatraensis</TSeq_orgname>
+  <TSeq_defline>kappa-casein precursor [Capricornis sumatraensis]</TSeq_defline>
+  <TSeq_length>192</TSeq_length>
+  <TSeq_sequence>MMKSFFLVVTILALTLPFLGAQEQNQEQPICCEKDERFFDDKIAKYIPIQYVLSRYPSYGLNYYQQRPVALINNQFLPYPYYAKPVAVRSPAQTLQWQVLPNTAPAKSCQDQPTTMARHPHPHLSFMAIPPKKDQDKTEIPTINTIASAEPTVHSTPTTEAIVNTVDNPEASSESIVSAPETNTAQVTSTEV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>1033201</TSeq_gi>
+  <TSeq_accver>BAA06882.1</TSeq_accver>
+  <TSeq_taxid>34866</TSeq_taxid>
+  <TSeq_orgname>Capricornis swinhoei</TSeq_orgname>
+  <TSeq_defline>kappa-casein precursor [Capricornis swinhoei]</TSeq_defline>
+  <TSeq_length>192</TSeq_length>
+  <TSeq_sequence>MMKSFFLVVTILALTLPFLGAQEQNQEQPICCEKDERFFDDKIAKYIPIQYVLSRYPSYGLNYYQQRPVALINNQFLPYPYYAKPVAVRSPAQTLQWQVLPNTAPAKSCQDQPTTMARHPHPHLSFMAIPPKKDQDKTEIPTINTIASAETTVHSTPTTEAIVNTVDNREASSESIVSAPETNTAQVTSTEV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>1033238</TSeq_gi>
+  <TSeq_accver>BAA06885.1</TSeq_accver>
+  <TSeq_taxid>34869</TSeq_taxid>
+  <TSeq_orgname>Rupicapra rupicapra</TSeq_orgname>
+  <TSeq_defline>kappa-casein precursor [Rupicapra rupicapra]</TSeq_defline>
+  <TSeq_length>192</TSeq_length>
+  <TSeq_sequence>MMKSFFLVATILALTLPFLGAQEQNQEQSICCEKDERFFEDKIAKYIPIQYVLSRYPSYGLNYYQQRPVALINNQFLPYPYYAKPVAVRSPAQTLQWQVLPNTAPAKSCQDQPTTMAHHPHPHLSFMAIPPKKDQDKTEIPTINTIASAEPTVHSTPTTEAIVNTVDNPEASSESIASAPETNTAQVTSTEV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>1033232</TSeq_gi>
+  <TSeq_accver>BAA06884.1</TSeq_accver>
+  <TSeq_taxid>34871</TSeq_taxid>
+  <TSeq_orgname>Naemorhedus goral</TSeq_orgname>
+  <TSeq_defline>kappa-casein precursor [Naemorhedus goral]</TSeq_defline>
+  <TSeq_length>192</TSeq_length>
+  <TSeq_sequence>MMKSFFLVVTILALTLPFLGAQEQNQEQPICCEKDERFFDDKIAKYIPIQYVLSRYPSYGLNYYQQRPVALINNQFLPYPYYAKPVAVRSPAQTLQWQVLPNTAPAKSCQDQPTTMARHPHPHLSFMAIPPKKDQDKTEIPTINTIASAEPTVHSTPTTEAIVNTVDNPEASSESIASAPETNTAQVTSTEV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>1033235</TSeq_gi>
+  <TSeq_accver>BAA06886.1</TSeq_accver>
+  <TSeq_taxid>34873</TSeq_taxid>
+  <TSeq_orgname>Oreamnos americanus</TSeq_orgname>
+  <TSeq_defline>kappa-casein precursor [Oreamnos americanus]</TSeq_defline>
+  <TSeq_length>192</TSeq_length>
+  <TSeq_sequence>MMKSFFLVVTILALTLPFLGAQEQNQEQPICCEKDERFFDDKIAKYIPIQYVLSRYPSYGLNYYQQRPVALINNQFLPYPYYAKPVAVRSPAQILQWQVLPNTAPAKSCQDQPTTMARHPHPHLSFMAIPPKKDQDKTEIPTINTIASAEPTVHSTPTTEAIVNTVDNPEASSESIVSAPETNTAQVTSTEV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>1033241</TSeq_gi>
+  <TSeq_accver>BAA06887.1</TSeq_accver>
+  <TSeq_taxid>34875</TSeq_taxid>
+  <TSeq_orgname>Saiga tatarica</TSeq_orgname>
+  <TSeq_defline>kappa-casein precursor [Saiga tatarica]</TSeq_defline>
+  <TSeq_length>202</TSeq_length>
+  <TSeq_sequence>MMKSFFLVVTILALTLPFLDAQERNQEQPICCEKDERFFNDRIAKYIPIQYVLSRYPSYGLNYYQQRPVALINNQFLPYPYYAKPVAVRSPAQTLQWQVLPNTVPAKSCQDQPTTMARHPHPHLSFMAIPPKKDQDKTEIPTINTVASAEPASTPTTEAIVNTEAIVNTEAIVNTVDNPEASSEIIASVPETNTAQVTSTEV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>817316329</TSeq_gi>
+  <TSeq_accver>XP_012328827.1</TSeq_accver>
+  <TSeq_taxid>37293</TSeq_taxid>
+  <TSeq_orgname>Aotus nancymaae</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Aotus nancymaae]</TSeq_defline>
+  <TSeq_length>180</TSeq_length>
+  <TSeq_sequence>MKSFLLVVNVLALSLPFLAAETQNQEQQACRENDERPFYQKIVPYIPIYYVPNSYPYYRTNWYQNRPAIAINTPYVSPPYYPNSVRPHAQVPQWQYLPNVNPPTMVHRPKLHPSFIAVPPKKIQDKIIIPTINAITTVEPTPTPATVTTVKRVVTPEASSESIITSTPETTTVSVTTPTV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>403280959</TSeq_gi>
+  <TSeq_accver>XP_003931970.1</TSeq_accver>
+  <TSeq_taxid>39432</TSeq_taxid>
+  <TSeq_orgname>Saimiri boliviensis boliviensis</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Saimiri boliviensis boliviensis]</TSeq_defline>
+  <TSeq_length>180</TSeq_length>
+  <TSeq_sequence>MKSFLLVVNVLALSLPFLAAEIQNQEKQACRENDERQLYQKIVPYIPIYYVLNSYPYYRTNWYQKRPAIAINTPYVSRPYYPSPVRPYAQVPQWQYLPNIHTPTVVHRPKLHPSFIAIPPKKIQDKIIIPTINTITTVEPTPTPTTVTMVKRVVTPEASSESIITSTPVTTTVSVTTPMA</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>532095382</TSeq_gi>
+  <TSeq_accver>XP_005333360.1</TSeq_accver>
+  <TSeq_taxid>43179</TSeq_taxid>
+  <TSeq_orgname>Ictidomys tridecemlineatus</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Ictidomys tridecemlineatus]</TSeq_defline>
+  <TSeq_length>181</TSeq_length>
+  <TSeq_sequence>MKALLLIVNVVALTLPLLAADVQDQEKTACNKKIERLFNEKIVSYVPIHYVLNRNPHFEPNYYQRTPVASINNPYMIHPYSTKAFVHMSHAQVPQWHLMSTIPHPTMVQPHPYLHPSFMAIPPKKIQDKTTITANDVKNTIEPTPVPTDEPAVSTTVIPAAFSEFVNTPETTTVPVTSPVV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>742114810</TSeq_gi>
+  <TSeq_accver>XP_010837415.1</TSeq_accver>
+  <TSeq_taxid>43346</TSeq_taxid>
+  <TSeq_orgname>Bison bison bison</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein isoform X1 [Bison bison bison]</TSeq_defline>
+  <TSeq_length>190</TSeq_length>
+  <TSeq_sequence>MMKSFFLVVTILALTLPFLGAQEQNQEQPIRCEKDERFFSDKIAKYIPIQYVLSRYPSYGLNAYQQKPVALINNQFLPYPYYAKPAAVRSPAQILQWQVLSNTVPAKSCQAQPTTMARHPHPHLSFMAIPPKKNQDKTEIPTINTIASGEPTSTPTTEAVESTVATLEASPEVIESPPEINTVQVTSTVV</TSeq_sequence>
+</TSeq>
+
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>507563375</TSeq_gi>
+  <TSeq_accver>XP_004665370.1</TSeq_accver>
+  <TSeq_taxid>51337</TSeq_taxid>
+  <TSeq_orgname>Jaculus jaculus</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Jaculus jaculus]</TSeq_defline>
+  <TSeq_length>197</TSeq_length>
+  <TSeq_sequence>MRNFLLLVNILALTLPFLAAEVQNQEQLCREKNEQVFDRKRVLPSPVHYVLSSKAHYDPSYYQYRPMVAVSPYVPYQYFVRLLVLRPPVQLSNWQVLPNIPQPAGVPRPNPRPSFLAIPTNADPNASAIPSANAHPDASAIPSANAHPDASAIPSPTPVPAAEPVVSTVANPEVSTVASTATETATVPVTSPVPEKH</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>1147391913</TSeq_gi>
+  <TSeq_accver>XP_020007261.1</TSeq_accver>
+  <TSeq_taxid>51338</TSeq_taxid>
+  <TSeq_orgname>Castor canadensis</TSeq_orgname>
+  <TSeq_defline>kappa-casein [Castor canadensis]</TSeq_defline>
+  <TSeq_length>192</TSeq_length>
+  <TSeq_sequence>MKRFLLVVNILALTLTFLTPEVQNQAQLSCHKNDERLSDQKRTQQIPIHYVLNNNPLYQPNYYQHRQPVSINNPYMPYPYYVISNPYMSYPYYSRLLVFGPHAQISKWQILPNIPQSAMIHRPYPRPSFIATPPKKIQNETDIPIINTIATVEPTPVPTTVPAVSTVIIPEASSQFANAPETTTVPVTPTVV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>940768390</TSeq_gi>
+  <TSeq_accver>XP_014323818.1</TSeq_accver>
+  <TSeq_taxid>59463</TSeq_taxid>
+  <TSeq_orgname>Myotis lucifugus</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Myotis lucifugus]</TSeq_defline>
+  <TSeq_length>257</TSeq_length>
+  <TSeq_sequence>MKSFFLILNILAFILPFLGAEVQNQEQQTCCETDKRLFDQSTVKYIPIHYVWKSYPHIAPNYYQYRPAVPINNQYMPYPCYTKPVSIRPHAQIPQWQALPNIYPPTLVRHPYLRPSLFAIPPKKNQDKAVIPTANTVPADEPTLIPPSESTPPLFAVPPKKNQDKAVIPIVNTVPADEATLFPPSESTPPLFATPPKKNQDKAVIPTINIIPADEPTVILSSEPTESTVVTQEASSQFIPSTPDTTTVTITAPTTVV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>556777482</TSeq_gi>
+  <TSeq_accver>XP_005983830.1</TSeq_accver>
+  <TSeq_taxid>59538</TSeq_taxid>
+  <TSeq_orgname>Pantholops hodgsonii</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein isoform X1 [Pantholops hodgsonii]</TSeq_defline>
+  <TSeq_length>192</TSeq_length>
+  <TSeq_sequence>MMKSFFLVVTILALTLPFLGAQEQNQEQPICSEKDERFFDDKIAKYIPIQYVLSRYPSYGLNYYQQRPVALINNQFLPYPYYAKPVAVRSPAQTLQWQVLPNTVPAKSCQDQPTTMARHPHPHLSFMAIPPKKDQDKTEIPTINTVASVEPTVHNTPTTEAIVNTVDNPEASSESIASAPETNTAQVTSTEV</TSeq_sequence>
+</TSeq>
+
+
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>635042818</TSeq_gi>
+  <TSeq_accver>XP_007996973.1</TSeq_accver>
+  <TSeq_taxid>60711</TSeq_taxid>
+  <TSeq_orgname>Chlorocebus sabaeus</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Chlorocebus sabaeus]</TSeq_defline>
+  <TSeq_length>182</TSeq_length>
+  <TSeq_sequence>MKSFLLVVNVLALTLPFLAAEVQNQKQPACHENGERQFYQKTAPYVPMYYVPNSYPYYGTNLYQHRPAIAINNPYVPRMYYANPAVVRPHAHIPQRQYLPNSHLPTVVRRPNLHPSFIAIPPKKIQDKIIIPTINTITAVEPTPAPTIEPTVDNVVTPEDFSESIITSTPETTTVSGATPTA</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>724803799</TSeq_gi>
+  <TSeq_accver>XP_010382155.1</TSeq_accver>
+  <TSeq_taxid>61622</TSeq_taxid>
+  <TSeq_orgname>Rhinopithecus roxellana</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Rhinopithecus roxellana]</TSeq_defline>
+  <TSeq_length>182</TSeq_length>
+  <TSeq_sequence>MKSFLLVVNVLALTLPFLAAEVQNQKQPACRENGERRFYQKTAPYVPMYYVPNSYPYYGTNLYQHRPAIAINNPYVPRTYYANLAVVRPHAQIPQWQYLPNSHLPTVVHRPNLHPSFIAIPPKKIQDKIIVPTINTITTVELTPAPTTEPTVDSVVTPEVFSESIITSTPETTTVSVTTPTA</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>332233119</TSeq_gi>
+  <TSeq_accver>XP_003265750.1</TSeq_accver>
+  <TSeq_taxid>61853</TSeq_taxid>
+  <TSeq_orgname>Nomascus leucogenys</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Nomascus leucogenys]</TSeq_defline>
+  <TSeq_length>182</TSeq_length>
+  <TSeq_sequence>MKSFLLVVNALAFTLPFLAAEVQNQKQPACRENDERPFYQKTAPYVPMYYVPNSYPYYGTNLYQHRPAIAINNPYVPRTYYANPAVVRPHAQIPQQQYLPNSHPPTVERHPNLHPSFIAIPPKKIQDKIIIPTINTIATVEPTPTPATEPTVDSVVTPEAFSESIVRSTPETTTVSVTPPTA</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>955478944</TSeq_gi>
+  <TSeq_accver>XP_014640236.1</TSeq_accver>
+  <TSeq_taxid>73337</TSeq_taxid>
+  <TSeq_orgname>Ceratotherium simum simum</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Ceratotherium simum simum]</TSeq_defline>
+  <TSeq_length>183</TSeq_length>
+  <TSeq_sequence>MMKSFFLVVNILALTLPFSSAEMQNQEQSTCCKNDERLFDQKTVKYIPIRYVLNSSPRQEPNYYQHRPVVPINNQYMLYRYYARPVAVRPHAQIPQWQVLPNISPSTEARHPYRRPSFIAIPPKKPQDKTVIPNTNTTATVEPTIIATTEPAVNNVVIPEASSESIITSTPETTTVPVTSPVI</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>591321662</TSeq_gi>
+  <TSeq_accver>XP_007086978.1</TSeq_accver>
+  <TSeq_taxid>74533</TSeq_taxid>
+  <TSeq_orgname>Panthera tigris altaica</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Panthera tigris altaica]</TSeq_defline>
+  <TSeq_length>182</TSeq_length>
+  <TSeq_sequence>MKTFFLVVNILALTLPFLGAQVQNQEQPTCRENDERLLNQKTAKYIPVHYVLSNYPHYEPSYYPHKPAVPVNNQYMPYPYYAKPVAVRPHVQIPQWQVLPNTYTPTVVRHPHLPASFIVIPPKKIQDKTGNPTINTIATAEPTLTPTTEPIVNTVVTTEASSEFTITSTPETTTVPVTSTMV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>532033496</TSeq_gi>
+  <TSeq_accver>XP_005359658.1</TSeq_accver>
+  <TSeq_taxid>79684</TSeq_taxid>
+  <TSeq_orgname>Microtus ochrogaster</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Microtus ochrogaster]</TSeq_defline>
+  <TSeq_length>179</TSeq_length>
+  <TSeq_sequence>MMRKFIAVMNILALTLPFLAAEVQNTDPTCREKDEILYDQRRILSIPVRYMLSSNLCYEPNYYRYRPFVAIDPYMYYSLITRLLLLRSPAQISQWQTMPNLPQPTEIPHPIPSPSFIAINTNQNDDTTTMPTVGINTPVESTPVPIIEPVEITVANPEASTVPVNNPETATVPVLSSVA</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>295701</TSeq_gi>
+  <TSeq_accver>BAA03285.1</TSeq_accver>
+  <TSeq_taxid>89462</TSeq_taxid>
+  <TSeq_orgname>Bubalus bubalis</TSeq_orgname>
+  <TSeq_defline>kappa-casein precursor [Bubalus bubalis]</TSeq_defline>
+  <TSeq_length>190</TSeq_length>
+  <TSeq_sequence>MMKSFFLVVTILALTLPFLGAQEQNQEQPIRCEKEERFFNDKIAKYIPIQYVLSRYPSYGLNYYQQKPVALINNQFLPYPYYAKPAAVRSPAQILQWQVLPNTVPAKSCQAQPTTMTRHPHPHLSFMAIPPKKNQDKTEIPTINTIVSVEPTSTPTTEAIENTVATLEASSEVIESVPETNTAQVTSTVV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>946799019</TSeq_gi>
+  <TSeq_accver>XP_014384965.1</TSeq_accver>
+  <TSeq_taxid>109478</TSeq_taxid>
+  <TSeq_orgname>Myotis brandtii</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Myotis brandtii]</TSeq_defline>
+  <TSeq_length>257</TSeq_length>
+  <TSeq_sequence>MKRFFLILNILAFILPFLGAEVQNQEQQTCCETDKRLFDQSTVKYIPIHYVWKSYPRIAPNYHQYRPAVPINNQYMPYPYYTKPVSIRPHAQIPQWQALPNIYPPTLVRHPYLHPSLFAIPPKKNQDKAVIPTANTVPADEPTLIPPSESTPPLIAIPPKKNQDKAVIPIVNTVPADEPTLFPPSESTPPLIAIPPKKNQDKAVIPTINIIAADEPTVILSSEPTVSTVVTQEASSQFITSTPETTTVTITAPTTVV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>602729614</TSeq_gi>
+  <TSeq_accver>XP_007450232.1</TSeq_accver>
+  <TSeq_taxid>118797</TSeq_taxid>
+  <TSeq_orgname>Lipotes vexillifer</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Lipotes vexillifer]</TSeq_defline>
+  <TSeq_length>181</TSeq_length>
+  <TSeq_sequence>MKSFFLVVTILALTLPFLGAEGQNQEQSTCCENDEKLFKEKKVKYIPIHYVLSRYPSYGLNYYQHRPAALINNQFMPYPYYAKPVAVRPHAQIPQWQFLPNIHPPTVAHHPHPCPSFLAIPPKKTQDKTVIPIINTIATVEPTLIPTTEPIVNTVVTPEASSEFIMSTPETTTVQVTSPVV</TSeq_sequence>
+</TSeq>
+
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>759121339</TSeq_gi>
+  <TSeq_accver>XP_011358913.1</TSeq_accver>
+  <TSeq_taxid>132908</TSeq_taxid>
+  <TSeq_orgname>Pteropus vampyrus</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Pteropus vampyrus]</TSeq_defline>
+  <TSeq_length>181</TSeq_length>
+  <TSeq_sequence>MMRFFLVVNILALTLPFLGAEVQNQERPTGCENNERSFNQNAVKSIPIHYALNNYLHAEPNYYQYRLASLINNQYMSYPYYAKSVTVRPHAQISQWQVLPNIYSSIVARHQYLHPSLIAVPSKKIQDKTVIPSINTIATVKPTLIPTPEPTVSSVVIPEASSEFVVSTPETTTVTITSSTV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>507942890</TSeq_gi>
+  <TSeq_accver>XP_004681294.1</TSeq_accver>
+  <TSeq_taxid>143302</TSeq_taxid>
+  <TSeq_orgname>Condylura cristata</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Condylura cristata]</TSeq_defline>
+  <TSeq_length>176</TSeq_length>
+  <TSeq_sequence>MKRIFLVLNILAITLPFLGAEVQNQEQLTCHENDERFINKKTIQYIPIHSVLSSHPYYQYRPAAPINNQYMPFLYAIPVAVKPHTQIHQWQVQPIGHQHTTAHHPFVYPPIITVSPKKTQEKTVVPTVNTMATVEPTLPPTIDPTVKMVITPETSSESIITSTIETTTAPVTTPMV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>1008789005</TSeq_gi>
+  <TSeq_accver>XP_015865386.1</TSeq_accver>
+  <TSeq_taxid>230844</TSeq_taxid>
+  <TSeq_orgname>Peromyscus maniculatus bairdii</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein isoform X2 [Peromyscus maniculatus bairdii]</TSeq_defline>
+  <TSeq_length>178</TSeq_length>
+  <TSeq_sequence>MRNFIVVVNILALTLPFLAAEVQNPHPTCREKPEILYNQKRFLYTPVGYMLNGNLPYEPSYYHQRPSVAVIPAYRPFVMILPLLRSLAQISQWQATPNFPQSTGVPRPIPSPSFLAIPTNKNEESTVIPKVHTAAPVETTPVPITEPVMTTTVANTEASTVLINTPEAVTVPVSSTAA</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>1016674193</TSeq_gi>
+  <TSeq_accver>XP_016062568.1</TSeq_accver>
+  <TSeq_taxid>291302</TSeq_taxid>
+  <TSeq_orgname>Miniopterus natalensis</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Miniopterus natalensis]</TSeq_defline>
+  <TSeq_length>180</TSeq_length>
+  <TSeq_sequence>MKSFFLVVNILALTLPFLGAEVENQEQRCCETDERGFNPNTVKYIPSHYVWKSYPHTKPSYYQYRPAVPINNQYVPYPYHAKPVSVRPHAQIPQLQVLPNLYPLTVVHHSCLHPSLIASPPKKIQDKTDIPTVNNIAAVEPTRIPTSGPIASTVLSEEASSEFITSTPESITVTLTTPIA</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>594692663</TSeq_gi>
+  <TSeq_accver>XP_007193624.1</TSeq_accver>
+  <TSeq_taxid>310752</TSeq_taxid>
+  <TSeq_orgname>Balaenoptera acutorostrata scammoni</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Balaenoptera acutorostrata scammoni]</TSeq_defline>
+  <TSeq_length>182</TSeq_length>
+  <TSeq_sequence>MMKSFFLVVTILALTLPFLSAEGQNQEQSTRCENGERLFNEKTVKYIPIHYVLSRYPSYGLNYYQHRLAAPINNQFMPYPYYAKPVAVRPHAQIPQWQFLPNIHPPTAAHHPHPRPSFIAIPPKKTQDKTVIPIINTIATAEPTLIPTTEPIVNTVVTPEASSEFITSTPETTTVQVTSPVV</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>115670</TSeq_gi>
+  <TSeq_accver>P19442.1</TSeq_accver>
+  <TSeq_taxid>10141</TSeq_taxid>
+  <TSeq_orgname>Cavia porcellus</TSeq_orgname>
+  <TSeq_defline>RecName: Full=Kappa-casein; Flags: Precursor</TSeq_defline>
+  <TSeq_length>234</TSeq_length>
+  <TSeq_sequence>MMKSFLLVVNIVALTLPFLAAEVQNQEQPACCGNDERLFEQKKVLYLLSYPVLNNYLRTAPSYYQNRASVPINNPYLCHLYYVPSFVLWAQGQIPKGPVSTDIHQSTMQYHQAKHPSFMAILSKKILGKATILSTDAIAAPEQTPVSAAQPTVSAGDTPEVSSQFIDTPDTSVLAEEARESPEDTPEISEFINAPDTAVPSEEPRESAEDTPEISSEFIFSPETSTGPAIASMA</TSeq_sequence>
+</TSeq>
+
+
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>795340768</TSeq_gi>
+  <TSeq_accver>XP_011782485.1</TSeq_accver>
+  <TSeq_taxid>336983</TSeq_taxid>
+  <TSeq_orgname>Colobus angolensis palliatus</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Colobus angolensis palliatus]</TSeq_defline>
+  <TSeq_length>182</TSeq_length>
+  <TSeq_sequence>MKSFLLVVNVLALTLPFLAAEVQNQKQPACHENGERWFYQKTAPYVPMYYVPNSYPYYGTNLYQHRPAIAINNPYVPRTYYANPAVVKPHAQIAQRQYLPNSHLPTVVCRPNLHPSFIATPPKKIQDKIIIPTINTITTLEPTPAPITEPTVDSVVTPEVLSESIITSTPETTTVSVTTPTA</TSeq_sequence>
+</TSeq>
+
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>1104935430</TSeq_gi>
+  <TSeq_accver>XP_019060358.1</TSeq_accver>
+  <TSeq_taxid>885580</TSeq_taxid>
+  <TSeq_orgname>Fukomys damarensis</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Fukomys damarensis]</TSeq_defline>
+  <TSeq_length>171</TSeq_length>
+  <TSeq_sequence>MMKSFLLVVNILALTLRFSAAEEPNQEQPACCENDERLFSQKKVLYILSHPVLNNYLHNAPNYYQNRAVIPINPYKCHPYYAQLFVLRPQTQVPQWPVHQLTMLHHPTKYPPFIVIPEKKIPEKATTPTTDTTSTPEPVSVPAATTDFPEPSAEIIHTPETSTVPVTSPVA</TSeq_sequence>
+</TSeq>
+
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>634853626</TSeq_gi>
+  <TSeq_accver>XP_007941005.1</TSeq_accver>
+  <TSeq_taxid>1230840</TSeq_taxid>
+  <TSeq_orgname>Orycteropus afer afer</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Orycteropus afer afer]</TSeq_defline>
+  <TSeq_length>177</TSeq_length>
+  <TSeq_sequence>MDETPGNLLPLRLQAAEVQSQEQLTCLESDERWFCQQIVKYNPVNYMRSYAQYEPNYYQPRLAVPINNPYISHIYPGKPVAVRPHVQIPQWQVPSNINPSPLAYHTYFHPSLIVVPPKKVQDEAIIPTIDTTTIEPTHIPTIEPTVNTVVTPDASSDFISTSSTPATTTVPVTSPIV</TSeq_sequence>
+</TSeq>
+
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>1044411177</TSeq_gi>
+  <TSeq_accver>XP_017357139.1</TSeq_accver>
+  <TSeq_taxid>1737458</TSeq_taxid>
+  <TSeq_orgname>Cebus capucinus imitator</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Cebus capucinus imitator]</TSeq_defline>
+  <TSeq_length>180</TSeq_length>
+  <TSeq_sequence>MKSFLLVVNVLALSMPFLAAEIQNQEQQACRENDERQLYQKIVPYIPIYYVLNSNPYYRTNWYQNRPAIAINTPYVSRPYYPSPVRPHAQVPQRQYLPNIHTPTTVRRPKLHPSFIAIPPKKIQDKIIIPTINTITTVEPTPTSTTVTMVKRIVTPEASSESIITSTPETTTASVTTPTA</TSeq_sequence>
+</TSeq>
+
+<TSeq>
+  <TSeq_seqtype value="protein"/>
+  <TSeq_gi>640822240</TSeq_gi>
+  <TSeq_accver>XP_008068101.1</TSeq_accver>
+  <TSeq_taxid>1868482</TSeq_taxid>
+  <TSeq_orgname>Carlito syrichta</TSeq_orgname>
+  <TSeq_defline>PREDICTED: kappa-casein [Carlito syrichta]</TSeq_defline>
+  <TSeq_length>186</TSeq_length>
+  <TSeq_sequence>MKSFLLAVNVLALTLPFLAAEVQNQEQPACYGNDERLFNQKPTPNFPIHYVLNSYPHYAPYFYQPRPAASIHDPYMPYQYYVKPAIFRPHSSVHPQIPQWQVLSNIHPPTAMHPPYQHPAFIAFPPKKTPVQTALPTINTIATVEPTPISATEPVVNNEVPPKASSEFIITSTPEATTVPVSSTVA</TSeq_sequence>
+</TSeq>
+
+
+</TSeqs>

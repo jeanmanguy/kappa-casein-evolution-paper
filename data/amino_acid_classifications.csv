@@ -1,0 +1,106 @@
+classification,class,residue
+by charge,positive,R
+by charge,positive,H
+by charge,positive,K
+by charge,negative,D
+by charge,negative,E
+by charge,neutral,A
+by charge,neutral,N
+by charge,neutral,C
+by charge,neutral,Q
+by charge,neutral,G
+by charge,neutral,I
+by charge,neutral,L
+by charge,neutral,M
+by charge,neutral,F
+by charge,neutral,P
+by charge,neutral,S
+by charge,neutral,T
+by charge,neutral,W
+by charge,neutral,Y
+by charge,neutral,V
+by charge,gap,-
+by polarity,polar,R
+by polarity,polar,H
+by polarity,polar,K
+by polarity,polar,D
+by polarity,polar,E
+by polarity,polar,N
+by polarity,polar,C
+by polarity,polar,Q
+by polarity,polar,G
+by polarity,polar,S
+by polarity,polar,T
+by polarity,polar,Y
+by polarity,non polar,A
+by polarity,non polar,I
+by polarity,non polar,L
+by polarity,non polar,M
+by polarity,non polar,F
+by polarity,non polar,P
+by polarity,non polar,W
+by polarity,non polar,V
+by polarity,gap,-
+custom: charge and aromatic,cysteine,C
+custom: charge and aromatic,apolar,A
+custom: charge and aromatic,glycine,G
+custom: charge and aromatic,proline,P
+custom: charge and aromatic,polar,S
+custom: charge and aromatic,polar,T
+custom: charge and aromatic,polar,N
+custom: charge and aromatic,charged -,D
+custom: charge and aromatic,polar,Q
+custom: charge and aromatic,charged -,E
+custom: charge and aromatic,charged +,R
+custom: charge and aromatic,histidine,H
+custom: charge and aromatic,charged +,K
+custom: charge and aromatic,apolar,I
+custom: charge and aromatic,apolar,L
+custom: charge and aromatic,apolar,M
+custom: charge and aromatic,apolar,V
+custom: charge and aromatic,aromatic,F
+custom: charge and aromatic,aromatic,W
+custom: charge and aromatic,aromatic,Y
+custom: charge and aromatic,gap,-
+custom: aromatics,other,C
+custom: aromatics,other,A
+custom: aromatics,other,G
+custom: aromatics,other,P
+custom: aromatics,other,S
+custom: aromatics,other,T
+custom: aromatics,other,N
+custom: aromatics,other,D
+custom: aromatics,other,Q
+custom: aromatics,other,E
+custom: aromatics,other,R
+custom: aromatics,other,H
+custom: aromatics,other,K
+custom: aromatics,other,I
+custom: aromatics,other,L
+custom: aromatics,other,M
+custom: aromatics,other,V
+custom: aromatics,aromatic,F
+custom: aromatics,aromatic,W
+custom: aromatics,aromatic,Y
+custom: aromatics,gap,-
+essentiality,conditionally essential,C
+essentiality,non essential,A
+essentiality,conditionally essential,G
+essentiality,conditionally essential,P
+essentiality,non essential,S
+essentiality,essential,T
+essentiality,non essential,N
+essentiality,non essential,D
+essentiality,conditionally essential,Q
+essentiality,non essential,E
+essentiality,conditionally essential,R
+essentiality,essential,H
+essentiality,essential,K
+essentiality,essential,I
+essentiality,essential,L
+essentiality,essential,M
+essentiality,essential,V
+essentiality,essential,F
+essentiality,essential,W
+essentiality,conditionally essential,Y
+essentiality,gap,-

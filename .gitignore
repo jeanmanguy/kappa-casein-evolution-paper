@@ -35,3 +35,11 @@ vignettes/*.pdf
 # Shiny token, see https://shiny.rstudio.com/articles/shinyapps.html
 rsconnect/
 .Rproj.user
+
+# Iupred2a
+lib/iupred2a/
+
+# output
+figures_and_tables_paper_files
+graphs/*
+tables/*

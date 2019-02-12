@@ -1,0 +1,21 @@
+residue,group
+C,cysteine
+F,aromatic
+W,aromatic
+Y,aromatic
+H,histidine
+R,charged +
+K,charged +
+S,polar
+T,polar
+N,polar
+Q,polar
+E,charged -
+D,charged -
+A,apolar
+V,apolar
+I,apolar
+L,apolar
+M,apolar
+G,glycine
+P,proline

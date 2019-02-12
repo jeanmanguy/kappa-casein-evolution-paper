@@ -1,0 +1,4 @@
+species,part,start,end
+Bos taurus,signal peptide,1,21
+Bos taurus,PKC,22,126
+Bos taurus,GMP,127,190
