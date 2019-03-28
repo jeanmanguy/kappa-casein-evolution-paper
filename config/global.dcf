@@ -11,6 +11,7 @@ load_libraries: TRUE
 libraries:
   tidyverse,
   glue,
+  farver,
   ggforce,
   ggpmisc,
   ggstance,
