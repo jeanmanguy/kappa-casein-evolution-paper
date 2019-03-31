@@ -1,4 +1,4 @@
-version: 0.8.2
+version: 0.9.0
 data_loading: TRUE
 data_loading_header: TRUE
 data_ignore:
@@ -8,30 +8,15 @@ munging: TRUE
 logging: FALSE
 logging_level: DEBUG
 load_libraries: TRUE
-libraries:
-  tidyverse,
-  glue,
-  farver,
-  ggforce,
-  ggpmisc,
-  ggstance,
-  ggthemes,
-  Hmisc,
-  ape,
-  Peptides,
-  XML,
-  rvest,
-  withr,
-  patchwork,
-  ggtree,
-  here,
-  assertthat,
-  geoscale,
-  magrittr,
-  knitr,
-  kableExtra
+libraries: tidyverse, glue, farver,
+    ggforce, ggpmisc, ggstance,
+    ggthemes, Hmisc, ape, Peptides,
+    XML, rvest, withr, patchwork,
+    ggtree, here, assertthat,
+    geoscale, magrittr, knitr,
+    kableExtra
 as_factors: FALSE
-data_tables: FALSE
 attach_internal_libraries: FALSE
 cache_loaded_data: TRUE
 sticky_variables: NONE
+tables_type: data_frame
