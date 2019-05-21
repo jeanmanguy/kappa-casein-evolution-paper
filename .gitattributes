@@ -1,0 +1,8 @@
+*.html linguist-detectable=false
+*.R linguist-language=R
+*.Rmd linguist-language=R
+data/* linguist-detectable=false
+tables/* linguist-generated
+graphs/* linguist-generated
+lib/* linguist-vendored=false
+*.csv linguist-detectable=false
