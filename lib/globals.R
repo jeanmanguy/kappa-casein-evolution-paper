@@ -7,7 +7,7 @@ add.config(
 # Amino acids ----
 # list_residues_ordered <- residues <- c("S", "T", "G", "A", "P", "I", "L", "V", "M", "F", "H", "Y", "W", "C", "K", "R", "D", "E", "N", "Q")
 
-list_residues_ordered_aa_comp <- residues <- "ILVAMSTNQGYFWCPHRKDE" %>%
+list_residues_ordered_aa_comp <- residues <- "NQSTILVAMYFWHRKDEGPC" %>%
   str_split("") %>%
   unlist()
 

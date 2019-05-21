@@ -38,12 +38,8 @@ cache("kappa_caseins_mature_aa_composition", {
 
 
 kappa_caseins_aa_comp_df_plot <- kappa_caseins_splitted_cleavage_aa_composition %>%
+  select(-n) %>%
   group_by(part, residues) %>%
-  summarise_at(vars(freq, n), .funs = list(min = min, max = max)) %>%
+  summarise_at(vars(freq), .funs = list(min = min, max = max)) %>%
   ungroup() %>%
-  left_join(amino.acid.classification.cysteines.plot, by = c("residues" = "residue")) %>%
-  order_cleavage_parts() %>%
-  mutate(
-    residues_f = residues %>% fct_relevel(list_residues_ordered_aa_comp) %>% fct_relabel(~ glue("{.x} - {one_2_three_aas[.x]}")),
-    part = fct_rev(part)
-  )
+  mutate(residues = fct_relevel(residues, list_residues_ordered_aa_comp))

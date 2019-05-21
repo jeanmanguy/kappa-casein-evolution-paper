@@ -45,14 +45,12 @@ max_msa_index <- kappa_caseins_alignment_positions %>% pull(msa_index) %>% max()
 align_breaks <- c(
   1, # min
   max_msa_index, # max
-  seq(100, max_msa_index, 100), # intermediate positions
-  position_align_chymosin_cleavage_site + 0.5 # cleavage site
+  seq(100, max_msa_index, 100) # intermediate positions
 )
 align_breaks_labels <- c(
   1, # min
   max_msa_index, # max
-  seq(100, max_msa_index, 100), # intermediate positions
-  "▲" # cleavage site
+  seq(100, max_msa_index, 100) # intermediate positions
 ) %>% as.character()
 align_minor_breaks <- c(1, max_msa_index, seq(25, max_msa_index, 25))
 ```
@@ -62,27 +60,29 @@ align_minor_breaks <- c(1, max_msa_index, seq(25, max_msa_index, 25))
 
 ```{r exportfunctions}
 save_plot_pdf <- partial(
-  ggsave, 
-  path = plot_output_dir, 
-  device = cairo_pdf, 
+  ggsave,
+  path = plot_output_dir,
+  device = cairo_pdf,
   units = "in"
 )
 save_plot_jpg <- partial(
-  ggsave, 
-  path = plot_output_dir, 
-  dpi = "retina", 
+  ggsave,
+  path = plot_output_dir,
+  dpi = "retina",
   units = "in"
 )
 save_plot <- function(plot, name, ...) {
   suppressMessages(
     save_plot_pdf(plot = plot, filename = glue("{name}.pdf"), ...)
-    )
+  )
   suppressMessages(
     save_plot_jpg(plot = plot, filename = glue("{name}.jpg"), ...)
-    )
+  )
+  invisible(plot)
 }
 save_table <- function(table, name, ...) {
   write(x = table, file = file.path(table_output_dir, glue("{name}.tex")), ...)
+  invisible(plot)
 }
 ```
 
@@ -115,10 +115,100 @@ colour_parts_kappa_casein <- c(
 ```
 
 
+## Bases plot
+
+```{r base_plot_alignment_parts, cache=TRUE}
+# scales and theme ----
+scale_x_align_residue_plot <- scale_x_continuous(
+  expand = c(0, 0),
+  breaks = align_breaks,
+  labels = align_breaks_labels,
+  minor_breaks = align_minor_breaks
+)
+
+scale_y_align_residue_plot <- scale_y_continuous(
+  expand = c(0, 0),
+  breaks = c(0, 0.5, 1)
+)
+
+
+
+
+# base plots for figures and some supplementary figures
+plot_kappa_caseins_parts <- kappa_caseins_alignment_positions_parts %>%
+  ggplot(mapping = aes(x = msa_index, y = species, fill = part)) +
+  geom_tile(size = 0) + # 0 for no border
+  scale_fill_manual(values = c(colour_parts_kappa_casein), na.value = "white") +
+  scale_x_align_residue_plot +
+  scale_y_discrete(
+    position = "right",
+    labels = underscore_to_space,
+    expand = c(0, 0)
+  ) +
+  theme_bw() +
+  theme(
+    text = element_text(colour = "black", family = "Arial"),
+    axis.text = element_text(colour = "black", family = "Arial"),
+    axis.ticks.y = element_line(colour = "black"),
+    axis.ticks.x = element_line(colour = "black"),
+    legend.title = element_blank(),
+    legend.position = c(0, 1),
+    legend.justification = c(0, 1),
+    legend.background = element_rect(fill = "transparent"),
+    legend.box.background = element_rect(colour = "black", fill = "white", size = 0.2),
+    legend.spacing = unit(1, "mm"),
+    legend.key = element_blank(),
+    legend.box.spacing = unit(0.01, "line"),
+    legend.key.size = unit(5, "pt"),
+    legend.text = element_text(margin = margin(0, 0, 0, 2), size = 8),
+    legend.margin = margin(1, 1, 1, 1),
+    axis.ticks = element_line(size = 0.2),
+    axis.text.y = element_text(size = 7, face = "italic"),
+    axis.title.x = element_text(size = 8),
+    axis.text.x = element_text(size = 7),
+    panel.background = element_rect(fill = "white", colour = "white"),
+    plot.background = element_rect(fill = "white", colour = "white"),
+    panel.border = element_rect(fill = "transparent", colour = "black", size = 0.2),
+    axis.title.y = element_blank(),
+    plot.title = element_text(size = 9),
+    plot.subtitle = element_blank(),
+    panel.grid.major.x = element_line(size = 0.1),
+    panel.grid.major.y = element_line(size = 0.1),
+    panel.grid.minor.x = element_blank()
+  ) +
+  labs(x = "aligned amino acid position") +
+  NULL
+
+# equal expand values for the y axis to assure the 2 plots align well
+indels_kappacasein_parts_plot_expand <- c(0.005, 0.0)
+
+
+# species tree on the left
+plot_kappa_casein_tree <- ggplot(trimmed_species_tree, size = 0.5) +
+  geom_tree(size = 0.2) +
+  geom_treescale(x = 10, y = 40, fontsize = 2.5, linesize = 0.4, offset = 1) +
+  theme_bw() +
+  theme(
+    text = element_text(colour = "black", family = "Arial"),,
+    plot.margin = margin(0, 0, 0, 0),
+    panel.spacing = margin(0, 5, 5, 5),
+    panel.border = element_blank(),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    axis.text = element_blank(),
+    axis.title = element_blank(),
+    axis.ticks = element_blank(),
+  ) +
+  scale_y_continuous(expand = indels_kappacasein_parts_plot_expand) +
+  scale_x_continuous(expand = c(0, 0)) +
+  xlim_tree(167)
+```
+
+
 # Figure 1
 
 
-```{r figure1, echo=TRUE, fig.height=5.4, fig.width=8, cache=TRUE}
+```{r figure1, echo=TRUE, fig.height=4.1, fig.width=6, cache=TRUE}
 # custom geom to be used for annotation with consistent style
 geom_cladelabel_custom <- partial(
   geom_cladelabel,
@@ -135,7 +225,7 @@ geom_cladelabel_custom <- partial(
 data(timescales)
 
 mammals_periods <- timescales %>%
-  purrr::pluck("ICS2015") %>% 
+  purrr::pluck("ICS2015") %>%
   filter(End < oldest_node_tree, !is.na(Part_of)) %>%
   rename(geologic.period = Part_of) %>%
   group_by(geologic.period) %>%
@@ -150,7 +240,7 @@ mammals_periods_breaks <- c(mammals_periods$start) %>% round(1)
 # Panel A - maximum likelihood protein tree
 plot_fitted_tree <- fitted_tree %>%
   ggtree(size = 0.1, color = "black") +
-  xlim_tree(3.2) +
+  xlim_tree(3.4) +
   geom_treescale(
     x = 0.1,
     y = 30,
@@ -242,8 +332,7 @@ plot_compare_evodist_divtime <- compare_evodist_divtime %>%
   plot_compare_evodist_divtime +
   plot_layout(widths = c(2.8, 5.2)) &
   theme(
-    plot.tag.position = c(0, 1),
-    text = element_text(family = "arial", face = "plain")
+    text = element_text(colour = "black", family = "Arial", face = "plain")
   )
 )
 
@@ -256,82 +345,31 @@ save_plot(
 
 # Figure 2
 
-```{r figure2, fig.height=10.99, fig.width=8, cache=TRUE}
-# equal expand values for the y axis to assure the 2 plots align well
-indels_kappacasein_parts_plot_expand <- c(0.005, 0.0)
 
 
-# species tree on the left
-plot_kappa_casein_tree <- ggplot(trimmed_species_tree, size = 0.5) +
-  geom_tree(size = 0.2) +
-  geom_treescale(x = 100, y = 90, fontsize = 3, linesize = 0.2) +
-  theme_bw() +
-  theme(
-    plot.margin = margin(0, 0, 0, 0),
-    panel.spacing = margin(0, 5, 5, 5),
-    panel.border = element_blank(),
-    panel.grid.major = element_blank(),
-    panel.grid.minor = element_blank(),
-    axis.text = element_blank(),
-    axis.title = element_blank(),
-    axis.ticks = element_blank(),
-  ) +
-  scale_y_continuous(expand = indels_kappacasein_parts_plot_expand) +
-  scale_x_continuous(expand = c(0, 0)) +
-  xlim_tree(167)
-
-
-# length of PKC and GMP + protein tandem repeats
-bidirectional_breaks <- c(
-  range(parts_positions_neg$position), # min/max lengths
-  seq(0, 200, by = 75),
-  seq(0, -200, by = -75)
-) %>% sort()
-
-
-plot_indels_kappacasein_parts <- ggplot( # first the length bar plot
-  data = parts_positions_neg,
-  mapping = aes(x = position, y = species, fill = part)
-) +
-  geom_barh(stat = "identity") +
-  geom_rect( # then the PTRs annotations
+```{r figure2, fig.height=8.25, fig.width=6, cache=TRUE}
+plot_indels_kappacasein_parts <- plot_kappa_caseins_parts +
+  geom_rect( # PTRs annotations
     data = df_plot_indels,
     mapping = aes(
       ymin = as.numeric(species) - 0.4,
       ymax = as.numeric(species) + 0.4,
-      xmin = N_flank_position,
-      xmax = C_flank_position + 1,
+      xmin = N_flank_position - 1,
+      xmax = C_flank_position,
       colour = type
     ),
     inherit.aes = FALSE,
     alpha = 0.0,
     size = 0.25
-  ) + # add duplications
-  geom_vline(xintercept = 0, size = 0.1, colour = "black") +
-  scale_fill_manual(values = c(colour_parts_kappa_casein)) +
+  ) +
   scale_colour_manual(values = c("tandem repeat" = "black")) +
-  scale_y_discrete(
-    expand = indels_kappacasein_parts_plot_expand,
-    position = "right",
-    labels = underscore_to_space
-  ) +
-  scale_x_continuous(
-    expand = c(0, 0),
-    breaks = bidirectional_breaks,
-    minor_breaks = seq(-200, 200, 25),
-    labels = abs(bidirectional_breaks),
-    sec.axis = sec_axis(~.,
-      breaks = c(0),
-      labels = c("PKC /GMP cleavage site")
-    )
-  ) +
-  theme_bw() +
   theme(
-    legend.position = c(1, 1),
-    legend.justification = c(1, 1),
+    text = element_text(colour = "black", family = "Arial"),
+    legend.position = c(0, 1),
+    legend.justification = c(0, 1),
     axis.title.y = element_blank(),
     axis.line.y = element_blank(),
-    axis.text.y = element_text(size = 7, face = "italic"),
+    axis.text.y = element_text(size = 6, face = "italic", colour = "black"),
     axis.ticks = element_line(size = 0.2),
     legend.title = element_blank(),
     legend.text = element_text(margin = margin(0, 0, 0, 2), size = 9),
@@ -348,7 +386,8 @@ plot_indels_kappacasein_parts <- ggplot( # first the length bar plot
     panel.background = element_rect(fill = "white", colour = "white"),
     plot.background = element_rect(fill = "white", colour = "white"),
     legend.box.spacing = unit(0.01, "line"),
-    legend.key.size = unit(5, "pt"),
+    legend.key.height = unit(0.5, "lines"),
+    legend.key.width = unit(0.5, "lines"),
     panel.border = element_rect(
       fill = "transparent",
       colour = "black",
@@ -356,7 +395,7 @@ plot_indels_kappacasein_parts <- ggplot( # first the length bar plot
     )
   ) +
   labs(
-    x = "distance from the PKC/GMP cleavage site"
+    # x = "distance from the PKC/GMP cleavage site"
   )
 
 
@@ -373,37 +412,59 @@ save_plot(
 
 # Figure 3
 
-```{r figure3, fig.height=5.4, fig.width=8, cache=TRUE}
+```{r figure3, fig.height=4.1, fig.width=5.95, cache=TRUE}
+group_text_aa <- tribble(
+  ~x, ~label,
+  2.5, "polar non charged\n",
+  7, "hydrophobic\n",
+  11, "aromatic\n",
+  14, "charged\n＋",
+  16.5, "charged\n—",
+  19, "other\n",
+)
+
+
 (plot_aa_comp_range <- kappa_caseins_aa_comp_df_plot %>%
   ggplot(mapping = aes(
-    x = freq_min,
-    y = part,
-    xend = freq_max,
-    yend = part,
-    colour = group
+    ymin = min,
+    x = as.numeric(residues),
+    ymax = max,
+    colour = part
   )) +
-  geom_segment(show.legend = FALSE, size = 5) +
-  facet_wrap(~residues_f, ncol = 5, nrow = 4) +
-  scale_colour_manual("amino acids", values = aa_custom_OkabeIto_colours) +
-  theme_bw() +
-  scale_x_continuous(limits = c(0, NA), expand = c(0, 0)) +
+  geom_errorbar(size = 0.9, position = position_dodge(width = 0.8)) +
+  geom_vline(xintercept = c(4.5, 9.5, 12.5, 15.5, 17.5), colour = "darkgrey", size = 0.05) +
+  geom_text(data = group_text_aa, mapping = aes(x = x, label = label), size = 3, y = Inf, vjust = 1.5, inherit.aes = F, lineheight = 0.8, color = "black") +
+  theme_minimal() +
+  scale_x_continuous(breaks = 1:20, labels = list_residues_ordered_aa_comp, sec.axis = dup_axis(labels = function(x) {one_2_three_aas[list_residues_ordered_aa_comp[x]]}), expand = c(0.01, 0)) +
+  scale_colour_manual(values = c(colour_parts_kappa_casein)) +
+  scale_y_continuous(expand = c(0.0, 0), sec.axis = dup_axis(), limits = c(NA, 0.34)) +
   labs(
-    x = "amino acid frequency"
+    y = "frequency",
+    x = "amino acid"
   ) +
   theme(
     text = element_text(colour = "black", family = "Arial"),
     axis.text = element_text(colour = "black", family = "Arial"),
     axis.ticks = element_line(size = 0.1),
-    axis.text.x = element_text(),
-    axis.title.y = element_blank(),
+    axis.text.x.top = element_text(angle = 45, hjust = 0),
+    axis.title.x.top = element_blank(),
+    axis.title.y.right = element_blank(),
     panel.grid = element_blank(),
-    panel.grid.major = element_line(linetype = "dotted"),
-    panel.grid.major.x = element_line(size = 0.1, colour = "black"),
-    panel.grid.minor.x = element_line(size = 0.05, colour = "darkgrey"),
-    panel.border = element_rect(size = 0.2, colour = "black"),
-    strip.background = element_rect(fill = "white", size = 0.0, colour = NA),
+    panel.grid.major = element_blank(),
+    panel.grid.major.x = element_line(size = 0.1, colour = "grey", linetype = "dotted"),
+    panel.grid.minor.x = element_blank(),
     strip.text = element_text(hjust = 0, size = 10),
-    panel.spacing.x = unit(1, "lines")
+    panel.spacing.x = unit(1, "lines"),
+    panel.border = element_rect(colour = "black", size = 0.9, fill = "transparent"),
+    legend.position = c(0, -0.07),
+    legend.justification = c(0, 1),
+    legend.background = element_rect(colour = "white", fill = "white", size = NA),
+    legend.direction = "horizontal",
+    legend.box.margin = margin(0, 0, 0, 0),
+    legend.margin = margin(0, 0, 0, 0),
+    legend.box.spacing = unit(0.0, "lines"),
+    plot.margin = margin(1, 1, 1, 1),
+    legend.title = element_blank()
   ) +
   NULL
 )
@@ -416,38 +477,21 @@ save_plot(
 
 # Figure 4
 
-```{r figure4, fig.height=10, fig.width=8, cache=TRUE}
-# scales and theme ----
-scale_x_align_residue_plot <- scale_x_continuous(
-  expand = c(0, 0),
-  breaks = align_breaks,
-  labels = align_breaks_labels,
-  minor_breaks = align_minor_breaks
-)
-
-scale_y_align_residue_plot <- scale_y_continuous(
-  expand = c(0, 0),
-  breaks = c(0, 0.5, 1)
-)
-
-theme_align_residue_plot <- theme_bw() +
-  theme(
-    legend.position = "top",
-    legend.title = element_blank()
-  )
-
+```{r figure4, fig.height=8.5, fig.width=6, cache=TRUE}
 # names and labels ----
-label_other_residues <- "other residues"
-label_glutamine <- "glutamine"
-label_asparagine <- "asparagine"
-label_tyrosine <- "tyrosine"
-label_other_aromatic <- "other aromatic (F or W)"
+label_other_residues <- "other"
+label_glutamine <- "glutamine (Q)"
+label_asparagine <- "asparagine (N)"
+label_tyrosine <- "tyrosine (Y)"
+label_other_aromatic <- "phenylalanine (F) or tryptophan (W)"
 label_charged_minus <- "negatively charged (D or E)"
 label_charged_plus <- "positively charged (R, K or H)"
-label_pSer <- "pSer"
-label_Ser <- "Ser"
+label_pSer <- "phosphorylated serine (pS)"
+label_Ser <- "Serine (S)"
 label_Ch <- "goat" # Capra hircus
-label_BtCh <- "cow & goat" # Bos taurus and Capra hircus
+label_Bt <- "cow" # Bos taurus 
+
+
 
 # other residues diplayed in grey ----
 colour_other_residues <- c()
@@ -455,7 +499,7 @@ colour_other_residues[label_other_residues] <- "#e7e7e7"
 
 # colours for each plot ----
 colours_asngln <- colour_other_residues
-colours_asngln[label_glutamine] <- "#461b32"
+colours_asngln[label_glutamine] <- "#002016"
 colours_asngln[label_asparagine] <- "#009E73"
 
 colours_aromatics <- colour_other_residues
@@ -471,7 +515,7 @@ colours_phosphorylations <- colour_other_residues
 colours_phosphorylations[label_pSer] <- "#247a62"
 colours_phosphorylations[label_Ser] <- "#8da0cb"
 colours_known_pSer <- c()
-colours_known_pSer[label_BtCh] <- "#a65628"
+colours_known_pSer[label_Bt] <- "#a65628"
 colours_known_pSer[label_Ch] <- "#4daf4a"
 
 # vertical line at PKC/GMP cleavage site
@@ -502,10 +546,12 @@ hydrophobicity_breaks <- c(kd_range_min, 2, 0, -2, kd_range_max)
 # goat: https://www.uniprot.org/uniprot/P02670#ptm_processing
 # cow: https://www.uniprot.org/uniprot/P02668#ptm_processing
 known_pSer_site_df <- tribble(
-  ~msa_index, ~label,
-  355, label_Ch,
-  294, label_BtCh,
-  179, label_BtCh
+  ~msa_index, ~label, ~y,
+  355, label_Ch, Inf,
+  294, label_Bt, 0.91,
+  294, label_Ch, Inf,
+  179, label_Bt, 0.91,
+  179, label_Ch, Inf
 )
 
 # Panel A - glutamine and asparagine ----
@@ -531,7 +577,7 @@ plot_alignment_asngln <- df_plot_asngln %>%
     values = colours_asngln,
     guide = guide_legend(reverse = TRUE)
   ) +
-  theme_align_residue_plot +
+  labs(fill = "residue") +
   NULL
 
 
@@ -560,7 +606,7 @@ plot_alignment_aromatics <- df_plot_aromatics %>%
     values = colours_aromatics,
     guide = guide_legend(reverse = TRUE)
   ) +
-  theme_align_residue_plot +
+  labs(fill = "residue") +
   NULL
 
 
@@ -588,7 +634,7 @@ plot_alignment_charged <- df_plot_charged %>%
     values = colours_charged,
     guide = guide_legend(reverse = TRUE)
   ) +
-  theme_align_residue_plot +
+  labs(fill = "residue") +
   NULL
 
 
@@ -608,11 +654,6 @@ plot_alignment_disorder <- df_plot_disorder %>%
   ggplot(mapping = aes(y = n_w, x = msa_index, fill = class)) +
   geom_bar(stat = "identity", colour = NA) +
   scale_fill_brewer(palette = "Greens") +
-  theme_bw() +
-  theme(
-    legend.position = "top",
-    legend.title = element_text(size = 8)
-  ) +
   labs(fill = "predicted disorder") +
   NULL
 
@@ -633,13 +674,8 @@ plot_alignment_hydrophobicity <- df_plot_hydrophobicity %>%
     palette = "BrBG",
     limits = c(kd_range_min, kd_range_max),
     direction = 1,
-    breaks = hydrophobicity_breaks,
-    guide = guide_colourbar(ticks.colour = "black", barwidth = 12)
-  ) +
-  theme_bw() +
-  theme(
-    legend.position = "top",
-    legend.title = element_text(size = 8)
+    breaks = sort(hydrophobicity_breaks),
+    guide = guide_legend(barwidth = 10, barheight = 0.4, label.theme = element_text(size = 6))
   ) +
   labs(fill = "hydrophobicity") +
   NULL
@@ -668,13 +704,17 @@ df_plot_phosphorylations <- kappa_casein_fam20c_matches_tidy %>%
 plot_alignment_phosphorylations <- df_plot_phosphorylations %>%
   ggplot(mapping = aes(y = n_w, x = msa_index, fill = class)) +
   geom_bar(stat = "identity", colour = NA) +
-  geom_text(data = known_pSer_site_df, mapping = aes(x = msa_index, colour = label), y = 1, vjust = 0.5, label = "▾", inherit.aes = FALSE, size = 4) +
-
+  geom_text(data = known_pSer_site_df, mapping = aes(x = msa_index, colour = label, y = y), vjust = 1, label = "▼", inherit.aes = FALSE, size = 3) +
+  scale_colour_manual(values = colours_known_pSer) +
   scale_fill_manual(
     values = colours_phosphorylations,
     guide = guide_legend(reverse = TRUE)
   ) +
-  theme_align_residue_plot +
+  labs(
+    fill = "residue",
+    colour = "known phosphorylation sites"
+  ) +
+  guides(fill = guide_legend(order = 1, reverse = TRUE)) +
   NULL
 
 
@@ -691,21 +731,31 @@ plot_alignment_phosphorylations <- df_plot_phosphorylations %>%
   vline_cleavage & # following scales, themes and labs applied to all subplots
   scale_x_align_residue_plot &
   scale_y_align_residue_plot &
+  theme_bw() &
   theme(
     text = element_text(family = "Arial", colour = "black"),
+    legend.position = "top",
+    legend.title = element_text(size = 7),
     legend.text = element_text(size = 7),
     legend.box.spacing = unit(0.01, "line"),
     axis.text = element_text(size = 7, colour = "black"),
     axis.title = element_text(size = 7),
     panel.border = element_rect(size = 0.2),
     axis.ticks = element_line(size = 0.2),
-    legend.key.size = unit(5, "pt"),
+    legend.key.width = unit(0.5, "lines"),
+    legend.key.height = unit(0.5, "lines"),
     plot.tag.position = c(0, 1),
     plot.tag = element_text(colour = "black", size = 11),
     legend.justification = c(0, 0),
+    legend.spacing.x = unit(0.4, "lines"),
+    plot.margin = margin(0, 0, 0, 0),
+    panel.grid.major.x = element_line(size = 0.01),
+    panel.grid.minor.x = element_line(size = 0.01),
+    panel.grid.major.y = element_line(size = 0.01),
+    panel.grid.minor.y = element_line(size = 0.01),
   ) &
   labs(
-    x = "amino acid position in alignment",
+    x = "aligned amino acid position",
     y = "weighted frequency"
   )
 )
@@ -719,7 +769,7 @@ save_plot(
 
 # Figure 5
 
-```{r figure5, fig.height=3.4, fig.width=8, cache=TRUE}
+```{r figure5, fig.height=2.8, fig.width=6, cache=TRUE}
 pH_breaks <- c(3, 4, 5, 6, 7)
 pH_minor_breaks <- seq(1.5, 7.5, 0.5)
 ncpr_highlighted_species <- c(
@@ -739,8 +789,7 @@ plot_ncpr_change_mature <- kappa_caseins_ncpr %>%
   geom_line(size = 0.1, colour = "lightgray") +
   facet_wrap(~part) +
   scale_y_continuous(
-    limits = c(-0.21, 0.21),
-    sec.axis = sec_axis(~.)
+    limits = c(-0.21, 0.21)
   ) +
   scale_x_continuous(
     breaks = pH_breaks,
@@ -767,12 +816,7 @@ plot_ncpr_change_mature <- kappa_caseins_ncpr %>%
   theme_bw() +
   theme(
     legend.title = element_blank(),
-    legend.text.align = 0,
-    legend.text = element_text(face = "italic", size = 8),
-    legend.key.size = unit(10, "pt"),
-    legend.position = "bottom",
-    legend.box.spacing = unit(0.03, "line"),
-    legend.justification = c(1, 0),
+    legend.position = "none",
     panel.background = element_rect(size = 0.2, colour = "black"),
     panel.grid.major = element_line(size = 0.2),
     plot.tag.position = c(0, 1),
@@ -788,7 +832,15 @@ plot_ncpr_change_mature <- kappa_caseins_ncpr %>%
 # same plot, different data
 plot_ncpr_change_parts <- plot_ncpr_change_mature %+%
   (kappa_caseins_ncpr %>% filter(part != "mature")) &
-  theme(legend.position = "none")
+  theme(
+    legend.margin = margin(0, 0, 0, 0),
+    legend.text.align = 0,
+    legend.text = element_text(face = "italic", size = 9),
+    legend.key.size = unit(10, "pt"),
+    legend.position = "bottom",
+    legend.box.spacing = unit(0.05, "line"),
+    legend.justification = c(1, 1),
+    )
 
 # combination of the 2 plots
 # highlight species of interests
@@ -814,7 +866,8 @@ plot_ncpr_change_parts <- plot_ncpr_change_mature %+%
       ) +
       labs(tag = "B")
   ) +
-  plot_layout(widths = c(1, 2))
+  plot_layout(widths = c(1, 2)) &
+    theme(text = element_text(colour = "black", family = "Arial"))
 )
 
 
@@ -827,7 +880,7 @@ save_plot(
 
 # Figure 6
 
-```{r figure6, fig.height=9.6, fig.width=8, cache=TRUE}
+```{r figure6, fig.height=7.5, fig.width=6, cache=TRUE}
 # merge predicted count phosphorylations/o-glycosylations
 df_phospho_glyco_counts <- bind_rows(
   phosphorylation = kappa_casein_fam20c_counts,
@@ -855,18 +908,13 @@ plot_phospho_counts <- df_phospho_glyco_counts %>%
   ) +
   theme_bw() +
   theme(
-    axis.title = element_blank(),
-    axis.ticks.y = element_blank(),
     axis.text.y = element_blank(),
+    axis.ticks.y = element_blank(),
     legend.position = c(0, 1),
     legend.justification = c(0, 1),
-    legend.title = element_blank(),
-    legend.background = element_rect(size = 0.1, colour = "black"),
-    legend.key.size = unit(5, "pt"),
-    legend.text = element_text(size = 8)
   ) +
   labs(
-    title = "phosphorylations predictions"
+    x = "count of predicted phosphorylations"
   ) +
   NULL
 
@@ -891,36 +939,47 @@ plot_glyco_counts <- df_phospho_glyco_counts %>%
   ) +
   theme_bw() +
   theme(
-    axis.title = element_blank(),
     legend.position = "none",
     axis.text.y = element_text(face = "italic", size = 6),
   ) +
   labs(
-    title = "O-glycosylation predictions"
+    x = "count of predicted O-glycosylations"
   ) +
   NULL
 
-plot_phospho_glyco_counts <- {
+(plot_phospho_glyco_counts <- {
   plot_kappa_casein_tree + {
     {
       plot_phospho_counts + plot_glyco_counts
     } &
       theme(
+        text = element_text(colour = "black", family = "Arial"),
         plot.margin = margin(0, 3, 0, 3),
-        panel.border = element_rect(size = 0.1),
         axis.title.y = element_blank(),
-        axis.text.x = element_text(size = 6),
+        axis.text.x = element_text(size = 7),
         axis.ticks = element_line(size = 0.1, lineend = "butt"),
-        plot.title = element_text(size = 8),
-        plot.subtitle = element_blank()
+        plot.title = element_blank(),
+        plot.subtitle = element_blank(),
+        axis.title.x = element_text(size = 8),
+        legend.text = element_text(size = 7),
+        legend.key.height = unit(0.9, "lines"),
+        legend.key.width = unit(0.9, "lines"),
+        legend.title = element_blank(),
+        legend.background = element_rect(fill = "transparent"),
+        legend.box.background = element_rect(colour = "black", fill = "white", size = 0.2),
+        legend.spacing = unit(1, "mm"),
+        legend.key = element_blank(),
+        legend.box.spacing = unit(0.01, "line"),
+        legend.margin = margin(1, 1, 1, 1),
+        panel.grid.major.x = element_line(size = 0.1),
+        panel.grid.major.y = element_line(size = 0.1),
+        panel.grid.minor.x = element_blank()
       ) &
       geom_vline(xintercept = 0, size = 0.05, colour = "black")
   }
 } +
-  plot_layout(widths = c(0.7, 4)) +
-  theme(
-    plot.margin = margin(0, 0, 0, 0)
-  )
+  plot_layout(widths = c(0.7, 4)) 
+)
 
 save_plot(
   plot = plot_phospho_glyco_counts,
@@ -932,7 +991,7 @@ save_plot(
 
 # Figure 7
 
-```{r figure7, fig.height=9.5, fig.width=8, cache=TRUE}
+```{r figure7, fig.height=8.25, fig.width=6, cache=TRUE}
 all_cysteines_positions_rel_cattle <- kappa_caseins_cysteines_positions_rel_cattle %>%
   pull(cattle_position) %>%
   unique()
@@ -949,10 +1008,10 @@ plot_kappa_casein_cysteines <- kappa_caseins_cysteines_positions_rel_cattle %>%
     label = residue,
     fill = group
   )) +
-  geom_tile() +
-  geom_vline(xintercept = seq(1.5, 11.5, 1), colour = "black", size = 0.1) +
-  geom_text(family = "Source Code Pro", size = 2) +
-  scale_fill_manual(values = aa_custom_OkabeIto_colours) +
+  geom_tile(mapping = aes(alpha = group)) +
+  geom_text(family = "Source Code Pro", size = 1.8) +
+  scale_fill_manual("amino acid", values = aa_custom_OkabeIto_colours) +
+  scale_alpha_manual("amino acid", values = c("cysteine" = 1, set_names(rep(0.6, 19), c("histidine", "aromatic", "glycine", "proline", "polar", "apolar", "charged +", "charged -")))) +
   theme_bw() +
   theme(legend.position = "bottom") +
   scale_x_continuous(
@@ -966,13 +1025,16 @@ plot_kappa_casein_cysteines <- kappa_caseins_cysteines_positions_rel_cattle %>%
   ) +
   guides(fill = guide_legend(nrow = 9, ncol = 1)) +
   theme(
+    text = element_text(colour = "black", family = "Arial"),
     axis.ticks.y = element_blank(),
     axis.text.y = element_blank(),
     legend.direction = "vertical",
-    legend.position = c(0.7, 0),
-    legend.key.size = unit(2, "pt"),
-    legend.title = element_text(size = 5),
-    legend.text = element_text(size = 5),
+    legend.position = c(-0.3, 1),
+    legend.justification = c(0, 1),
+    legend.key.width = unit(0.25, "lines"),
+    legend.key.height = unit(0.25, "lines"),
+    legend.title = element_text(size = 6),
+    legend.text = element_text(size = 6),
     legend.box.margin = margin(2, 2, 2, 2, unit = "pt"),
     legend.margin = margin(2, 2, 2, 2, unit = "pt"),
     legend.background = element_rect(fill = "transparent"),
@@ -982,14 +1044,19 @@ plot_kappa_casein_cysteines <- kappa_caseins_cysteines_positions_rel_cattle %>%
       size = 0.1
     ),
     legend.spacing = unit(0.5, "mm"),
-    legend.justification = c(.5, 0)
+    axis.title.y = element_blank(),
+    axis.title.x = element_text(size = 7),
+    axis.text.x = element_text(size = 7),
+    axis.ticks = element_line(size = 0.2),
+    panel.border = element_rect(size = 0.05, colour = "black"),
+    panel.grid.major.x = element_blank(),
+    plot.margin = margin(0, 0, 0, 0),
+    panel.grid.major.y = element_line(size = 0.01)
   ) +
   labs(
-    x = "position",
-    fill = "amino acids"
+    x = "Bovine mature kappa-casein residue position"
   ) +
   NULL
-
 
 
 # possibilities to form dimer/oligo/intrachain SS bonds
@@ -1014,31 +1081,28 @@ plot_SS_bonds <- kappa_caseins_SS_bonds_classes %>%
   theme_bw() +
   theme(
     legend.position = "none",
-    axis.text.y = element_text(size = 5, face = "italic"),
-    axis.title.x = element_blank(),
-    axis.title.y = element_blank(),
+    axis.text.y = element_text(size = 5, face = "italic", colour = "black"),
+    axis.title.x = element_text(size = 7),
     panel.border = element_rect(size = 0.1, colour = "black"),
-    panel.grid.major.x = element_blank()
+    panel.grid.major.x = element_blank(),
+    axis.title.y = element_blank(),
+    axis.text.x = element_text(size = 7),
+    axis.ticks = element_line(size = 0.2),
+    plot.margin = margin(0, 0, 0, 0),
+    panel.grid.major.y = element_line(size = 0.01)
+  ) +
+  labs(
+    x = "predicted possible type of bonds"
   ) +
   NULL
 
 (plot_combined_cysteines <- {
-  plot_kappa_casein_tree + {
-    {
-      plot_kappa_casein_cysteines + plot_SS_bonds
-    } +
-      plot_layout(widths = c(3.5, 1)) &
-      theme(
-        axis.title = element_blank(),
-        axis.text.x = element_text(size = 5),
-        axis.ticks = element_line(size = 0.2),
-        panel.border = element_rect(size = 0.1, colour = "black"),
-        panel.grid.major.x = element_blank(),
-        plot.margin = margin(0, 0.5, 0, 0),
+  plot_kappa_casein_tree + plot_kappa_casein_cysteines + plot_SS_bonds &
+    theme(
+      plot.margin = margin(0, 0, 0, 0),
       )
-  }
 } +
-  plot_layout(widths = c(0.5, 3.5)) +
+  plot_layout(widths = c(0.5, 2, 0.9)) +
   NULL
 )
 
@@ -1052,66 +1116,46 @@ save_plot(
 
 # Figure 8
 
-```{r figure8, fig.height=9.5, fig.width=8, cache=TRUE}
-# base plots for this figure and some supplementary figures
-plot_kappa_caseins_parts <- kappa_casein_parts_lengths %>%
-  mutate(part = fct_relevel(part, "GMP")) %>%
-  ggplot(mapping = aes(x = length + 0.5, y = species, fill = part)) +
-  geom_barh(stat = "identity") +
-  scale_x_continuous(
-    expand = c(0, 0),
-    breaks = c(1, seq(50, 300, 50)),
-    minor_breaks = seq(0, 300, 25)
-  ) +
-  scale_y_discrete(
-    position = "right",
-    labels = underscore_to_space,
-    expand = c(0, 0)
-  ) +
-  scale_fill_manual(values = c(colour_parts_kappa_casein)) +
-  theme_bw() +
-  theme(
-    legend.title = element_blank(),
-    legend.position = c(1, 1),
-    legend.justification = c(1, 1),
-    legend.background = element_rect(fill = "transparent"),
-    legend.box.background = element_rect(colour = "black", fill = "white", size = 0.2),
-    legend.spacing = unit(1, "mm"),
-    legend.key = element_blank(),
-    legend.box.spacing = unit(0.01, "line"),
-    legend.key.size = unit(5, "pt"),
-    legend.text = element_text(margin = margin(0, 0, 0, 2), size = 8),
-    axis.ticks = element_line(size = 0.2),
-    axis.text.y = element_text(size = 7, face = "italic"),
-    text = element_text(family = "Arial"),
-    axis.title.x = element_text(size = 8),
-    axis.text.x = element_text(size = 7),
-    panel.background = element_rect(fill = "white", colour = "white"),
-    plot.background = element_rect(fill = "white", colour = "white"),
-    panel.border = element_rect(fill = "transparent", colour = "black", size = 0.2),
-    axis.title.y = element_blank(),
-    plot.title = element_text(size = 9),
-    plot.subtitle = element_blank(),
-    panel.grid.major.x = element_line(size = 0.2),
-    panel.grid.minor.x = element_blank()
-  ) +
-  labs(x = "amino acid position") +
-  NULL
-
-
+```{r figure8, fig.height=8.25, fig.width=6, cache=TRUE}
 # data sets
 pepsin_positions <- kappa_caseins_cleavage_positions %>%
-  filter(peptidase == "pepsin")
+  filter(peptidase == "pepsin") %>%
+  left_join(kappa_caseins_alignment_positions, by = c("species", "cleavage_position" = "seq_index")) %>%
+  order_species_tree()
 plasmin_positions <- kappa_caseins_cleavage_positions %>%
-  filter(peptidase == "plasmin")
+  filter(peptidase == "plasmin") %>%
+  left_join(kappa_caseins_alignment_positions, by = c("species", "cleavage_position" = "seq_index")) %>%
+  order_species_tree()
 
 plot_kappa_casein_pepsin <- plot_kappa_caseins_parts +
   geom_segment(
     size = 0.1,
     data = pepsin_positions,
     mapping = aes(
-      x = cleavage_position + 0.5,
-      xend = cleavage_position + 0.5,
+      x = msa_index + 0.5,
+      xend = msa_index + 0.5,
+      y = as.integer(species) - 0.5,
+      yend = as.integer(species) + 0.5,
+      colour = "predicted\ncleavage\nsite"
+    ),
+    inherit.aes = FALSE
+  ) +
+  theme(
+    axis.text.y = element_blank(),
+    axis.ticks.y = element_blank(),
+    legend.position = c(-0.45, 1)
+  ) +
+  labs(title = "Pepsin") +
+  scale_colour_manual(values = c("predicted\ncleavage\nsite" = "black")) +
+  guides(fill = guide_legend(order = 1))
+
+plot_kappa_casein_plasmin <- plot_kappa_caseins_parts +
+  geom_segment(
+    size = 0.1,
+    data = plasmin_positions,
+    mapping = aes(
+      x = msa_index + 0.5,
+      xend = msa_index + 0.5,
       y = as.integer(species) - 0.5,
       yend = as.integer(species) + 0.5
     ),
@@ -1119,32 +1163,24 @@ plot_kappa_casein_pepsin <- plot_kappa_caseins_parts +
   ) +
   theme(
     legend.position = "none",
-    axis.text.y = element_blank(),
-    axis.ticks.y = element_blank()
-  ) +
-  labs(title = "Pepsin")
-
-plot_kappa_casein_plasmin <- plot_kappa_caseins_parts +
-  geom_segment(
-    size = 0.1,
-    data = plasmin_positions,
-    mapping = aes(
-      x = cleavage_position + 0.5,
-      xend = cleavage_position + 0.5,
-      y = as.integer(species) - 0.5,
-      yend = as.integer(species) + 0.5
-    ),
-    inherit.aes = FALSE
+    axis.text.y = element_text(colour = "black", size = 6)
   ) +
   labs(title = "Plasmin")
 
+
 (cleavage_sites_position_plot <- {
-  plot_kappa_casein_tree +
+  plot_kappa_casein_tree + {
     plot_kappa_casein_pepsin +
-    plot_kappa_casein_plasmin
+      plot_kappa_casein_plasmin &
+      theme(
+        text = element_text(colour = "black", family = "Arial"),
+        plot.margin = margin(0, 7, 0, 0),
+        legend.key.height = unit(0.9, "lines"),
+        legend.key.width = unit(0.9, "lines"),
+        )
+  }
 } +
-  plot_layout(width = c(1, 4, 4)) &
-  theme(plot.margin = margin(0, 0, 0, 0))
+  plot_layout(width = c(0.8, 4, 4))
 )
 
 save_plot(
@@ -1155,7 +1191,7 @@ save_plot(
 
 # Figure S1
 
-```{r figureS1, fig.height=10, fig.width=8, cache=TRUE}
+```{r figureS1, fig.height=8, fig.width=8, cache=TRUE}
 # positions clades
 clades_to_annotate <- tribble(
   ~node, ~clade,
@@ -1182,7 +1218,8 @@ plot_msa <- kappa_caseins_alignment_positions %>%
   by = c("residue" = "residue")
   ) %>%
   ggplot(mapping = aes(x = msa_index, y = species, fill = class)) +
-  geom_tile() +
+  geom_tile(size = 0, alpha = 0.85) +
+  scale_colour_manual(values = c("tandem repeat" = "black")) +
   scale_fill_manual(values = aa_custom_OkabeIto_colours) +
   scale_x_continuous(
     expand = c(0, 0),
@@ -1200,11 +1237,12 @@ plot_msa <- kappa_caseins_alignment_positions %>%
   ) +
   theme_bw() +
   theme(
+    text = element_text(colour = "black", family = "Arial"),
     legend.position = "none",
     axis.title.y.right = element_blank(),
     plot.margin = margin(0, 0, 0, 0),
     panel.spacing = margin(0, 0, 0, 0),
-    axis.text.y = element_text(face = "italic", size = 7)
+    axis.text.y = element_text(face = "italic", size = 7, colour = "black")
   ) +
   NULL
 
@@ -1223,12 +1261,15 @@ save_plot(
 ```
 
 # Figure S2
-```{r figureS2, echo=TRUE, fig.height=5.4, fig.width=8, cache=TRUE}
+```{r figureS2, echo=TRUE, fig.height=4.1, fig.width=6, cache=TRUE}
 # same plot, different data
 (plot_compare_evodist_divtime_nocorrect <- plot_compare_evodist_divtime %+%
   (compare_evodist_divtime %>%
     filter(corrected == FALSE)) &
-  theme(plot.tag = element_blank()))
+  theme(
+    text = element_text(colour = "black", family = "Arial"),
+    plot.tag = element_blank())
+ )
 
 save_plot(
   plot = plot_compare_evodist_divtime_nocorrect,
@@ -1238,7 +1279,7 @@ save_plot(
 
 # Figure S3
 
-```{r figureS3, fig.height=3, fig.width=8, cache=TRUE}
+```{r figureS3, fig.height=2.25, fig.width=6, cache=TRUE}
 species_old_indels <- c(
   "Homo_sapiens" = "human",
   "Bos_taurus" = "cow",
@@ -1285,7 +1326,7 @@ aa_old_indels_df_max_length <- max(aa_old_indels_df$new_index)
 
 plot_bars_old_indels <- aa_old_indels_df %>%
   ggplot(mapping = aes(x = new_index, y = species)) +
-  geom_tile(colour = "darkgrey", fill = "black") +
+  geom_tile(colour = "black", fill = "black") +
   theme_bw() +
   theme(
     text = element_text(family = "Arial", colour = "black"),
@@ -1328,16 +1369,16 @@ save_plot(
 
 # Figure S4
 
-```{r figureS4, fig.height=6, fig.width=8, cache=TRUE}
+```{r figureS4, fig.height=4.5, fig.width=6, cache=TRUE}
 (aacomp_scatter_plot <- kappa_caseins_parts_aa_composition %>%
   mutate(residues = fct_relevel(residues, list_residues_ordered_aa_comp)) %>%
   ggplot(mapping = aes(x = GMP, y = PKC)) +
   geom_abline(slope = 1, color = "darkgrey", size = 0.1) +
-  geom_point(alpha = 0.3, size = 0.1) +
+  geom_point(alpha = 0.3, size = 0.3) +
   facet_wrap(~residues, ncol = 5) +
   theme_bw() +
   theme(
-    text = element_text(colour = "black"),
+    text = element_text(colour = "black", family = "Arial"),
     strip.background = element_rect(fill = "white", colour = "black", size = 0),
     strip.text = element_text(size = 9, margin = margin(1, 1, 1, 1, unit = "pt")),
     panel.border = element_rect(size = 0.1),
@@ -1379,54 +1420,73 @@ save_plot(
 )
 ```
 
+
+
 # Figure S5
 
-```{r figureS5, fig.height=10, fig.width=8, cache=TRUE}
+```{r figureS5, fig.height=8, fig.width=6, cache=TRUE}
 # phosphoryaltion predictions
+fam20c_dataset <- kappa_casein_fam20c_matches_tidy %>%
+  left_join(kappa_caseins_alignment_positions, by = c("species", "match_position" = "seq_index")) %>%
+  filter(!is.na(match_position))
+# order_species_tree()
+
 plot_kappa_casein_pred_phospho_positions <- plot_kappa_caseins_parts +
   geom_segment(
-    size = 0.1,
-    data = kappa_casein_fam20c_matches_tidy %>%
-      rename(seq_index = match_position),
+    size = 0.2,
+    data = fam20c_dataset,
     mapping = aes(
-      x = seq_index,
-      xend = seq_index,
+      x = msa_index,
+      xend = msa_index,
+      y = as.integer(species) - 0.5,
+      yend = as.integer(species) + 0.5,
+      colour = "predicted\nposition"
+    ),
+    inherit.aes = FALSE
+  ) +
+  theme(
+    axis.text.y = element_blank(),
+    axis.ticks.y = element_blank()
+  ) +
+  labs(title = "Phosphorylations") +
+  scale_colour_manual(values = c("predicted\nposition" = "black")) +
+  NULL
+
+# O-glycosylation predictions
+oglyc_dataset <- kappa_casein_oglyc_predictions %>%
+  filter(Oglyc_pred) %>%
+  left_join(kappa_caseins_alignment_positions, by = c("species", "position" = "seq_index")) %>%
+  order_species_tree()
+
+plot_kappa_casein_pred_oglyc_positions <- plot_kappa_caseins_parts +
+  geom_segment(
+    size = 0.2,
+    data = oglyc_dataset,
+    mapping = aes(
+      x = msa_index,
+      xend = msa_index,
       y = as.integer(species) - 0.5,
       yend = as.integer(species) + 0.5
     ),
     inherit.aes = FALSE
   ) +
   theme(
-    legend.position = "none",
-    axis.text.y = element_blank(),
-    axis.ticks.y = element_blank()
-  ) +
-  labs(title = "Phosphorylations") +
-  NULL
-
-# O-glycosylation predictions
-plot_kappa_casein_pred_oglyc_positions <- plot_kappa_caseins_parts +
-  geom_segment(
-    size = 0.1,
-    data = kappa_casein_oglyc_predictions %>%
-      filter(Oglyc_pred) %>%
-      rename(seq_index = position),
-    mapping = aes(
-      x = seq_index,
-      xend = seq_index,
-      y = as.integer(species) - 0.5,
-      yend = as.integer(species) + 0.5
-    ),
-    inherit.aes = FALSE
+    axis.text.y = element_text(colour = "black", family = "Arial"),
+    legend.position = "none"
   ) +
   labs(title = "O-glycosylations") +
   NULL
 
-plot_phospho_oglyco_positions <- plot_kappa_casein_tree +
+(plot_phospho_oglyco_positions <- plot_kappa_casein_tree + {
   plot_kappa_casein_pred_phospho_positions +
-  plot_kappa_casein_pred_oglyc_positions +
-  plot_layout(widths = c(1, 4, 4)) &
-  theme(plot.margin = margin(0, 0, 0, 0))
+    plot_kappa_casein_pred_oglyc_positions &
+    theme(
+      text = element_text(colour = "black", family = "Arial"),
+      plot.margin = margin(0, 8, 0, 0)
+      )
+} +
+  plot_layout(widths = c(0.8, 4, 4))
+)
 
 save_plot(
   plot = plot_phospho_oglyco_positions,
@@ -1439,21 +1499,28 @@ save_plot(
 ```{r figure S6, fig.height=10, fig.width=4.44, cache=TRUE}
 cysteines_positions <- kappa_caseins_alignment_positions %>%
   filter(residue == "C") %>%
-  select(-msa_index, -residue)
+  select(-seq_index, -residue)
 
 plot_kappa_casein_cysteines <- plot_kappa_caseins_parts +
   geom_segment(
-    size = 0.1,
+    size = 0.2,
     data = cysteines_positions,
     mapping = aes(
-      x = seq_index,
-      xend = seq_index,
+      x = msa_index,
+      xend = msa_index,
       y = as.integer(species) - 0.5,
-      yend = as.integer(species) + 0.5
+      yend = as.integer(species) + 0.5,
+      colour = "cysteine"
     ),
     inherit.aes = FALSE
   ) +
-  labs(title = "Cysteines") +
+  scale_colour_manual(values = c("cysteine" = "black")) +
+  theme(
+    legend.position = c(1, 1),
+    legend.justification = c(1, 1),
+    axis.text.y = element_text(colour = "black", family = "Arial"),
+  ) +
+  # labs(title = "Cysteines") +
   NULL
 
 (cysteines_position_plot <- {
@@ -1461,7 +1528,10 @@ plot_kappa_casein_cysteines <- plot_kappa_caseins_parts +
     plot_kappa_casein_cysteines
 } +
   plot_layout(width = c(1, 4)) &
-  theme(plot.margin = margin(0, 0, 0, 0))
+  theme(
+    text = element_text(colour = "black", family = "Arial"),
+    plot.margin = margin(0, 0, 0, 0)
+    )
 )
 
 save_plot(
@@ -1495,8 +1565,8 @@ kappa_casein_gi %>%
   mutate_at("species", fct_relabel, underscore_to_space) %>%
   mutate_at("gi", ~ ifelse(is.na(.x), "\\textsuperscript{a}", .x)) %>%
   rename(
-    `taxon id` = taxid,
-    `GenInfo Identifier` = gi
+    `NCBI Taxon ID` = taxid,
+    `NCBI GI Identifier` = gi
   ) %>%
   knitr::kable(
     format = "latex",
@@ -1519,9 +1589,9 @@ kappa_casein_gi %>%
     full_width = TRUE,
     repeat_header_continued = TRUE
   ) %>%
-  group_rows("Monotremes", 1, 2) %>%
-  group_rows("Marsupials", 3, 4) %>%
-  group_rows("Placentals", 5, 99) %>%
+  # group_rows("Monotremes", 1, 2) %>%
+  # group_rows("Marsupials", 3, 4) %>%
+  # group_rows("Placentals", 5, 99) %>%
   footnote(
     alphabet = c(
       "First exon was recovered from a BLAST with the elephant sequence", # a - Manatee
@@ -1549,6 +1619,7 @@ kappa.casein.manual.repeats %>%
   kable_styling()
 
 format_species_ptr_table <- . %>%
+  str_replace("Dipodomys_ordii", glue("Dipodomys_ordii \\{footnote_marker_symbol(1, 'latex')}")) %>%
   fct_relabel(underscore_to_space) %>%
   map_chr(~ glue("\\textit{<<.x>>}", .open = "<<", .close = ">>")) # italicized
 
@@ -1585,7 +1656,7 @@ kappa.casein.manual.repeats %>%
     full_width = TRUE,
     repeat_header_continued = TRUE
   ) %>%
-  # footnote() %>%
+  footnote(symbol = c("likely highly degenerate repeat")) %>% 
   column_spec(1, width = "1.5in") %>%
   column_spec(2, width = "0.5in") %>%
   column_spec(3, width = "0.5in") %>%
@@ -1628,27 +1699,10 @@ all_predictions_metrics %>%
   save_table(table = ., name = "table_S3")
 ```
 
-
-
-```{r sessioninfo, echo=FALSE, fig.height=20, fig.width=20}
-si <- sessioninfo::session_info()
-pckgs <- map2(
-  si$packages$package,
-  si$packages$loadedversion,
-  ~ glue("{.x}\t{.y}")
-) %>%
-  simplify()
-
-# only write when code ran from console/rstudio not rmamarkdown render
-if (!knitr::is_html_output()) {
-  write(pckgs, "packages.txt")
-}
-```
-
-
 # Session info
 
-- Date: `r si$platform$date`
-- OS: `r si$platform$os`
-- Version: `r si$platform$version`
-- Packages: `r pckgs`
+```{r sessioninfo, echo=FALSE}
+options(width = 95)
+sessioninfo::session_info()
+```
+
