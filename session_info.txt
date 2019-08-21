@@ -1,0 +1,137 @@
+─ Session info ──────────────────────────────────────────────────────────────────────────────
+ setting  value                       
+ version  R version 3.6.1 (2019-07-05)
+ os       Linux Mint 19.2             
+ system   x86_64, linux-gnu           
+ ui       X11                         
+ language en_IE:en                    
+ collate  en_IE.UTF-8                 
+ ctype    en_IE.UTF-8                 
+ tz       Europe/Dublin               
+ date     2019-08-21                  
+
+─ Packages ──────────────────────────────────────────────────────────────────────────────────
+ package         * version    date       lib source                              
+ acepack           1.4.1      2016-10-29 [1] CRAN (R 3.6.0)                      
+ ade4              1.7-13     2018-08-31 [1] CRAN (R 3.6.0)                      
+ ape             * 5.3        2019-03-17 [1] CRAN (R 3.6.0)                      
+ aphid             1.3.3      2019-05-08 [1] CRAN (R 3.6.0)                      
+ askpass           1.1        2019-01-13 [1] CRAN (R 3.6.0)                      
+ assertthat      * 0.2.1      2019-03-21 [1] CRAN (R 3.6.0)                      
+ backports         1.1.4      2019-04-10 [1] CRAN (R 3.6.0)                      
+ badger            0.0.4      2019-01-08 [1] CRAN (R 3.6.0)                      
+ base64enc         0.1-3      2015-07-28 [1] CRAN (R 3.6.0)                      
+ BiocGenerics      0.30.0     2019-05-02 [1] Bioconductor                        
+ Biostrings        2.52.0     2019-05-02 [1] Bioconductor                        
+ broom             0.5.2      2019-04-07 [1] CRAN (R 3.6.1)                      
+ cellranger        1.1.0      2016-07-27 [1] CRAN (R 3.6.0)                      
+ checkmate         1.9.4      2019-07-04 [1] CRAN (R 3.6.1)                      
+ cleaver           1.22.0     2019-05-02 [1] Bioconductor                        
+ cli               1.1.0      2019-03-19 [1] CRAN (R 3.6.1)                      
+ cluster           2.1.0      2019-06-19 [1] CRAN (R 3.6.1)                      
+ codetools         0.2-16     2018-12-24 [1] CRAN (R 3.6.0)                      
+ colorspace        1.4-1      2019-03-18 [1] CRAN (R 3.6.0)                      
+ crayon            1.3.4      2017-09-16 [1] CRAN (R 3.6.0)                      
+ data.table        1.12.2     2019-04-07 [1] CRAN (R 3.6.0)                      
+ digest            0.6.20     2019-07-04 [1] CRAN (R 3.6.1)                      
+ dlstats           0.1.0      2017-08-07 [1] CRAN (R 3.6.0)                      
+ dplyr           * 0.8.3      2019-07-04 [1] CRAN (R 3.6.1)                      
+ ellipsis          0.2.0.1    2019-07-02 [1] CRAN (R 3.6.1)                      
+ evaluate          0.14       2019-05-28 [1] CRAN (R 3.6.0)                      
+ farver          * 1.1.0      2018-11-20 [1] CRAN (R 3.6.0)                      
+ fastmatch         1.1-0      2017-01-28 [1] CRAN (R 3.6.0)                      
+ forcats         * 0.4.0      2019-02-17 [1] CRAN (R 3.6.0)                      
+ foreign           0.8-72     2019-08-02 [1] CRAN (R 3.6.1)                      
+ formatR           1.7        2019-06-11 [1] CRAN (R 3.6.0)                      
+ Formula         * 1.2-3      2018-05-03 [1] CRAN (R 3.6.0)                      
+ generics          0.0.2      2018-11-29 [1] CRAN (R 3.6.0)                      
+ geoscale        * 2.0        2015-05-14 [1] CRAN (R 3.6.0)                      
+ ggforce         * 0.3.1      2019-08-20 [1] CRAN (R 3.6.1)                      
+ ggplot2         * 3.2.1      2019-08-10 [1] CRAN (R 3.6.1)                      
+ ggpmisc         * 0.3.1      2019-04-02 [1] CRAN (R 3.6.1)                      
+ ggstance        * 0.3.3      2019-08-19 [1] CRAN (R 3.6.1)                      
+ ggthemes        * 4.2.0      2019-05-13 [1] CRAN (R 3.6.0)                      
+ ggtree          * 1.16.5     2019-08-14 [1] Bioconductor                        
+ glue            * 1.3.1      2019-03-12 [1] CRAN (R 3.6.0)                      
+ gridExtra         2.3        2017-09-09 [1] CRAN (R 3.6.0)                      
+ gtable            0.3.0      2019-03-25 [1] CRAN (R 3.6.0)                      
+ haven             2.1.1      2019-07-04 [1] CRAN (R 3.6.1)                      
+ here            * 0.1        2017-05-28 [1] CRAN (R 3.6.0)                      
+ highr             0.8        2019-03-20 [1] CRAN (R 3.6.0)                      
+ Hmisc           * 4.2-0      2019-01-26 [1] CRAN (R 3.6.0)                      
+ hms               0.5.0      2019-07-09 [1] CRAN (R 3.6.1)                      
+ htmlTable         1.13.1     2019-01-07 [1] CRAN (R 3.6.0)                      
+ htmltools         0.3.6      2017-04-28 [1] CRAN (R 3.6.0)                      
+ htmlwidgets       1.3        2018-09-30 [1] CRAN (R 3.6.0)                      
+ httr              1.4.1.9000 2019-08-14 [1] Github (r-lib/httr@d7195c2)         
+ igraph            1.2.4.1    2019-04-22 [1] CRAN (R 3.6.0)                      
+ IRanges           2.18.1     2019-05-31 [1] Bioconductor                        
+ jsonlite          1.6        2018-12-07 [1] CRAN (R 3.6.0)                      
+ kableExtra      * 1.1.0      2019-03-16 [1] CRAN (R 3.6.0)                      
+ kmer              1.1.2      2019-05-20 [1] CRAN (R 3.6.0)                      
+ knitr           * 1.24       2019-08-08 [1] CRAN (R 3.6.1)                      
+ labeling          0.3        2014-08-23 [1] CRAN (R 3.6.0)                      
+ lattice         * 0.20-38    2018-11-04 [1] CRAN (R 3.6.0)                      
+ latticeExtra      0.6-28     2016-02-09 [1] CRAN (R 3.6.0)                      
+ lazyeval          0.2.2      2019-03-15 [1] CRAN (R 3.6.0)                      
+ lubridate         1.7.4      2018-04-11 [1] CRAN (R 3.6.0)                      
+ magrittr        * 1.5        2014-11-22 [1] CRAN (R 3.6.0)                      
+ MASS              7.3-51.4   2019-04-26 [1] CRAN (R 3.6.0)                      
+ Matrix            1.2-17     2019-03-22 [1] CRAN (R 3.6.0)                      
+ modelr            0.1.5      2019-08-08 [1] CRAN (R 3.6.1)                      
+ munsell           0.5.0      2018-06-12 [1] CRAN (R 3.6.0)                      
+ nlme              3.1-141    2019-08-01 [1] CRAN (R 3.6.1)                      
+ nnet              7.3-12     2016-02-02 [1] CRAN (R 3.6.0)                      
+ openssl           1.4.1      2019-07-18 [1] CRAN (R 3.6.1)                      
+ patchwork       * 0.0.1      2019-07-31 [1] Github (thomasp85/patchwork@fd7958b)
+ Peptides        * 2.4.1      2019-08-20 [1] CRAN (R 3.6.1)                      
+ phangorn          2.5.5      2019-06-19 [1] CRAN (R 3.6.1)                      
+ phylogram         2.1.0      2018-06-25 [1] CRAN (R 3.6.0)                      
+ pillar            1.4.2      2019-06-29 [1] CRAN (R 3.6.1)                      
+ pkgconfig         2.0.2      2018-08-16 [1] CRAN (R 3.6.0)                      
+ polyclip          1.10-0     2019-03-14 [1] CRAN (R 3.6.0)                      
+ ProjectTemplate * 0.9.0      2019-02-26 [1] CRAN (R 3.6.1)                      
+ purrr           * 0.3.2      2019-03-15 [1] CRAN (R 3.6.0)                      
+ quadprog          1.5-7      2019-05-06 [1] CRAN (R 3.6.1)                      
+ R6                2.4.0      2019-02-14 [1] CRAN (R 3.6.0)                      
+ RColorBrewer      1.1-2      2014-12-07 [1] CRAN (R 3.6.0)                      
+ Rcpp              1.0.2      2019-07-25 [1] CRAN (R 3.6.1)                      
+ readr           * 1.3.1      2018-12-21 [1] CRAN (R 3.6.1)                      
+ readxl            1.3.1      2019-03-13 [1] CRAN (R 3.6.0)                      
+ rlang             0.4.0      2019-06-25 [1] CRAN (R 3.6.0)                      
+ rmarkdown         1.14       2019-07-12 [1] CRAN (R 3.6.1)                      
+ rpart             4.1-15     2019-04-12 [1] CRAN (R 3.6.0)                      
+ rprojroot         1.3-2      2018-01-03 [1] CRAN (R 3.6.0)                      
+ rstudioapi        0.10       2019-03-19 [1] CRAN (R 3.6.0)                      
+ rvcheck           0.1.3      2018-12-06 [1] CRAN (R 3.6.0)                      
+ rvest           * 0.3.4      2019-05-15 [1] CRAN (R 3.6.0)                      
+ S4Vectors         0.22.0     2019-05-02 [1] Bioconductor                        
+ scales            1.0.0      2018-08-09 [1] CRAN (R 3.6.0)                      
+ seqinr            3.4-5      2017-08-01 [1] CRAN (R 3.6.0)                      
+ sessioninfo       1.1.1      2018-11-05 [1] CRAN (R 3.6.0)                      
+ stringi           1.4.3      2019-03-12 [1] CRAN (R 3.6.0)                      
+ stringr         * 1.4.0      2019-02-10 [1] CRAN (R 3.6.0)                      
+ survival        * 2.44-1.1   2019-04-01 [1] CRAN (R 3.6.0)                      
+ tibble          * 2.1.3      2019-06-06 [1] CRAN (R 3.6.0)                      
+ tidyr           * 0.8.3      2019-03-01 [1] CRAN (R 3.6.0)                      
+ tidyselect        0.2.5      2018-10-11 [1] CRAN (R 3.6.0)                      
+ tidytree          0.2.6      2019-08-09 [1] CRAN (R 3.6.1)                      
+ tidyverse       * 1.2.1      2017-11-14 [1] CRAN (R 3.6.0)                      
+ treeio            1.8.1      2019-05-20 [1] Bioconductor                        
+ tweenr            1.0.1      2018-12-14 [1] CRAN (R 3.6.0)                      
+ vctrs             0.2.0      2019-07-05 [1] CRAN (R 3.6.1)                      
+ viridisLite       0.3.0      2018-02-01 [1] CRAN (R 3.6.0)                      
+ webshot           0.5.1      2018-09-28 [1] CRAN (R 3.6.0)                      
+ withr           * 2.1.2      2018-03-15 [1] CRAN (R 3.6.0)                      
+ xfun              0.8        2019-06-25 [1] CRAN (R 3.6.0)                      
+ XML             * 3.98-1.20  2019-06-06 [1] CRAN (R 3.6.0)                      
+ xml2            * 1.2.2      2019-08-09 [1] CRAN (R 3.6.1)                      
+ XVector           0.24.0     2019-05-02 [1] Bioconductor                        
+ yaml              2.2.0      2018-07-25 [1] CRAN (R 3.6.0)                      
+ zeallot           0.1.0      2018-01-28 [1] CRAN (R 3.6.0)                      
+ zlibbioc          1.30.0     2019-05-02 [1] Bioconductor                        
+
+[1] /home/jean/R/x86_64-pc-linux-gnu-library/3.6
+[2] /usr/local/lib/R/site-library
+[3] /usr/lib/R/site-library
+[4] /usr/lib/R/library
