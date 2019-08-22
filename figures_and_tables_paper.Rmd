@@ -132,6 +132,13 @@ colour_parts_kappa_casein <- c(
 # scales and theme ----
 scale_x_align_residue_plot <- scale_x_continuous(
   expand = c(0, 0),
+  breaks = c(align_breaks),
+  labels = c(align_breaks_labels),
+  minor_breaks = align_minor_breaks
+)
+
+scale_x_align_residue_plot_pkc_gmp <- scale_x_continuous(
+  expand = c(0, 0),
   breaks = c(align_breaks, position_align_chymosin_cleavage_site),
   labels = c(align_breaks_labels, "PKC/GMP"),
   minor_breaks = align_minor_breaks
@@ -149,7 +156,7 @@ scale_y_align_residue_plot <- scale_y_continuous(
 plot_kappa_caseins_parts <- kappa_caseins_alignment_positions_parts %>%
   ggplot(mapping = aes(x = msa_index, y = species, fill = part)) +
   geom_tile(size = 0) + # 0 for no border
-  scale_fill_manual(values = c(colour_parts_kappa_casein), na.value = "white") +
+  scale_fill_manual(values = c(colour_parts_kappa_casein), na.value = "white", guide = guide_legend(reverse=TRUE)) +
   scale_x_align_residue_plot +
   scale_y_discrete(
     position = "right",
@@ -403,7 +410,7 @@ plot_indels_kappacasein_parts <- plot_kappa_caseins_parts +
     )
   ) +
   labs(
-    colour = "Manually predicted feature",
+    colour = "Predicted feature",
     fill = "Parts"
   )
 
@@ -760,7 +767,7 @@ plot_alignment_phosphorylations <- df_plot_phosphorylations %>%
     (plot_alignment_phosphorylations + labs(tag = "F"))
 } + plot_layout(ncol = 1) &
   # vline_cleavage & # following scales, themes and labs applied to all subplots
-  scale_x_align_residue_plot &
+  scale_x_align_residue_plot_pkc_gmp &
   scale_y_align_residue_plot &
   theme_bw() &
   theme(
@@ -866,7 +873,7 @@ plot_ncpr_change_parts <- plot_ncpr_change_mature %+%
   theme(
     legend.margin = margin(0, 0, 0, 0),
     legend.text.align = 0,
-    legend.text = element_text(face = "italic", size = 9),
+    legend.text = element_text(face = "italic", size = 8),
     legend.key.size = unit(10, "pt"),
     legend.position = "bottom",
     legend.box.spacing = unit(0.05, "line"),
@@ -941,11 +948,11 @@ plot_phospho_counts <- df_phospho_glyco_counts %>%
   theme(
     axis.text.y = element_blank(),
     axis.ticks.y = element_blank(),
-    legend.position = c(0, 1),
-    legend.justification = c(0, 1),
+    legend.position = "bottom",
   ) +
   labs(
-    x = "count of predicted phosphorylations"
+    x = "count of predicted phosphorylations",
+    fill = "Parts"
   ) +
   NULL
 
@@ -992,16 +999,15 @@ plot_glyco_counts <- df_phospho_glyco_counts %>%
         plot.title = element_blank(),
         plot.subtitle = element_blank(),
         axis.title.x = element_text(size = 8),
-        legend.text = element_text(size = 7),
-        legend.key.height = unit(0.9, "lines"),
-        legend.key.width = unit(0.9, "lines"),
-        legend.title = element_blank(),
-        legend.background = element_rect(fill = "transparent"),
-        legend.box.background = element_rect(colour = "black", fill = "white", size = 0.2),
-        legend.spacing = unit(1, "mm"),
-        legend.key = element_blank(),
-        legend.box.spacing = unit(0.01, "line"),
-        legend.margin = margin(1, 1, 1, 1),
+        axis.title.x.top = element_blank(),
+    legend.justification = c(0, 1),
+    legend.title = element_text(size = 8),
+    legend.text = element_text(size = 8),
+    legend.background = element_rect(fill = "transparent"),
+    panel.background = element_rect(fill = "white", colour = "white"),
+    legend.box.spacing = unit(0.01, "line"),
+    legend.key.height = unit(0.5, "lines"),
+    legend.key.width = unit(0.5, "lines"),
         panel.grid.major.x = element_line(size = 0.1),
         panel.grid.major.y = element_line(size = 0.1),
         panel.grid.minor.x = element_blank()
@@ -1167,17 +1173,28 @@ plot_kappa_casein_pepsin <- plot_kappa_caseins_parts +
       xend = msa_index + 0.5,
       y = as.integer(species) - 0.5,
       yend = as.integer(species) + 0.5,
-      colour = "predicted\ncleavage\nsite"
+      colour = "predicted position"
     ),
     inherit.aes = FALSE
   ) +
   theme(
     axis.text.y = element_blank(),
     axis.ticks.y = element_blank(),
-    legend.position = c(-0.45, 1)
+        legend.position = "bottom",
+    legend.justification = c(0, 1),
+    legend.title = element_text(size = 8),
+    legend.text = element_text(size = 8),
+    legend.background = element_rect(fill = "transparent"),
+    panel.background = element_rect(fill = "white", colour = "white"),
+    legend.box.spacing = unit(0.01, "line"),
+    legend.key.height = unit(0.5, "lines"),
+    legend.key.width = unit(0.5, "lines")
   ) +
-  labs(title = "Pepsin") +
-  scale_colour_manual(values = c("predicted\ncleavage\nsite" = "black")) +
+  labs(
+    title = "Pepsin",
+    colour = "Cleavage site"
+    ) +
+  scale_colour_manual(values = c("predicted position" = "black")) +
   guides(fill = guide_legend(order = 1))
 
 plot_kappa_casein_plasmin <- plot_kappa_caseins_parts +
@@ -1261,7 +1278,7 @@ plot_msa <- kappa_caseins_alignment_positions %>%
   #   labels = align_breaks_labels,
   #   minor_breaks = align_minor_breaks
   # ) +
-  scale_x_align_residue_plot +
+  scale_x_align_residue_plot_pkc_gmp +
   scale_y_discrete(
     position = "right",
     expand = c(0.005, 0.0),
@@ -1477,16 +1494,29 @@ plot_kappa_casein_pred_phospho_positions <- plot_kappa_caseins_parts +
       xend = msa_index,
       y = as.integer(species) - 0.5,
       yend = as.integer(species) + 0.5,
-      colour = "predicted\nposition"
+      colour = "predicted position"
     ),
     inherit.aes = FALSE
   ) +
   theme(
     axis.text.y = element_blank(),
-    axis.ticks.y = element_blank()
+    axis.ticks.y = element_blank(),
+    legend.position = "bottom",
+    legend.justification = c(0, 1),
+    legend.title = element_text(size = 8),
+    legend.text = element_text(size = 8),
+    legend.background = element_rect(fill = "transparent"),
+    panel.background = element_rect(fill = "white", colour = "white"),
+    legend.box.spacing = unit(0.01, "line"),
+    legend.key.height = unit(0.5, "lines"),
+    legend.key.width = unit(0.5, "lines")
   ) +
-  labs(title = "Phosphorylations") +
-  scale_colour_manual(values = c("predicted\nposition" = "black")) +
+  labs(
+    title = "Phosphorylations",
+    colour = "PTM",
+    fill = "Parts"
+    ) +
+  scale_colour_manual(values = c("predicted position" = "black")) +
   NULL
 
 # O-glycosylation predictions
@@ -1547,17 +1577,24 @@ plot_kappa_casein_cysteines <- plot_kappa_caseins_parts +
       xend = msa_index,
       y = as.integer(species) - 0.5,
       yend = as.integer(species) + 0.5,
-      colour = "cysteine"
+      colour = "position"
     ),
     inherit.aes = FALSE
   ) +
-  scale_colour_manual(values = c("cysteine" = "black")) +
+  scale_colour_manual(values = c("position" = "black")) +
   theme(
-    legend.position = c(1, 1),
-    legend.justification = c(1, 1),
+        legend.position = "bottom",
+    legend.justification = c(0, 1),
+    legend.title = element_text(size = 8),
+    legend.text = element_text(size = 8),
+    legend.background = element_rect(fill = "transparent"),
+    panel.background = element_rect(fill = "white", colour = "white"),
+    legend.box.spacing = unit(0.01, "line"),
+    legend.key.height = unit(0.5, "lines"),
+    legend.key.width = unit(0.5, "lines"),
     axis.text.y = element_text(colour = "black", family = "Arial"),
   ) +
-  # labs(title = "Cysteines") +
+  labs(colour = "Cysteines", fill = "Parts") +
   NULL
 
 (cysteines_position_plot <- {
