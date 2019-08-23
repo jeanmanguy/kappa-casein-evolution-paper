@@ -156,7 +156,7 @@ scale_y_align_residue_plot <- scale_y_continuous(
 plot_kappa_caseins_parts <- kappa_caseins_alignment_positions_parts %>%
   ggplot(mapping = aes(x = msa_index, y = species, fill = part)) +
   geom_tile(size = 0) + # 0 for no border
-  scale_fill_manual(values = c(colour_parts_kappa_casein), na.value = "white", guide = guide_legend(reverse=TRUE)) +
+  scale_fill_manual(values = c(colour_parts_kappa_casein), na.value = "white", guide = guide_legend(reverse = TRUE)) +
   scale_x_align_residue_plot +
   scale_y_discrete(
     position = "right",
@@ -601,7 +601,7 @@ plot_alignment_asngln <- df_plot_asngln %>%
   geom_rug(data = kappa_caseins_alignment_positions_parts, mapping = aes(x = msa_index, colour = part), outside = TRUE, sides = "b", inherit.aes = FALSE, show.legend = FALSE) +
   coord_cartesian(clip = "off") +
   scale_colour_manual(values = c(colour_parts_kappa_casein)) +
-  labs(fill = "residue") +
+  labs(fill = "Residue") +
   NULL
 
 
@@ -633,7 +633,7 @@ plot_alignment_aromatics <- df_plot_aromatics %>%
     geom_rug(data = kappa_caseins_alignment_positions_parts, mapping = aes(x = msa_index, colour = part), outside = TRUE, sides = "b", inherit.aes = FALSE, show.legend = FALSE) +
   coord_cartesian(clip = "off") +
   scale_colour_manual(values = c(colour_parts_kappa_casein)) +
-  labs(fill = "residue") +
+  labs(fill = "Residue") +
   NULL
 
 
@@ -664,7 +664,7 @@ plot_alignment_charged <- df_plot_charged %>%
     geom_rug(data = kappa_caseins_alignment_positions_parts, mapping = aes(x = msa_index, colour = part), outside = TRUE, sides = "b", inherit.aes = FALSE, show.legend = FALSE) +
   coord_cartesian(clip = "off") +
   scale_colour_manual(values = c(colour_parts_kappa_casein)) +
-  labs(fill = "residue") +
+  labs(fill = "Residue") +
   NULL
 
 
@@ -687,7 +687,7 @@ plot_alignment_disorder <- df_plot_disorder %>%
     geom_rug(data = kappa_caseins_alignment_positions_parts, mapping = aes(x = msa_index, colour = part), outside = TRUE, sides = "b", inherit.aes = FALSE, show.legend = FALSE) +
   coord_cartesian(clip = "off") +
   scale_colour_manual(values = c(colour_parts_kappa_casein)) +
-  labs(fill = "predicted disorder") +
+  labs(fill = "Predicted disorder") +
   NULL
 
 
@@ -713,7 +713,7 @@ plot_alignment_hydrophobicity <- df_plot_hydrophobicity %>%
     geom_rug(data = kappa_caseins_alignment_positions_parts, mapping = aes(x = msa_index, colour = part), outside = TRUE, sides = "b", inherit.aes = FALSE, show.legend = FALSE) +
   coord_cartesian(clip = "off") +
   scale_colour_manual(values = c(colour_parts_kappa_casein)) +
-  labs(fill = "hydrophobicity") +
+  labs(fill = "Hydrophobicity") +
   NULL
 
 
@@ -749,8 +749,8 @@ plot_alignment_phosphorylations <- df_plot_phosphorylations %>%
     guide = guide_legend(reverse = TRUE)
   ) +
   labs(
-    fill = "residue",
-    colour = "known phosphorylation sites"
+    fill = "Residue",
+    colour = "Known phosphorylation sites"
   ) +
   guides(fill = guide_legend(order = 1, reverse = TRUE)) +
   NULL
