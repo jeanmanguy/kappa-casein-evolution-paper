@@ -807,15 +807,15 @@ save_plot(
 
 # Figure 5
 
-```{r figure5, fig.height=2.8, fig.width=6, cache=TRUE}
+```{r figure5, fig.height=2.6, fig.width=6, cache=TRUE}
 pH_breaks <- c(3, 4, 5, 6, 7)
 pH_minor_breaks <- seq(1.5, 7.5, 0.5)
 ncpr_highlighted_species <- c(
-  "Saimiri_boliviensis",
-  "Cavia_porcellus",
-  "Homo_sapiens",
-  "Mus_musculus",
-  "Bos_taurus"
+   "Squirrel monkey" = "Saimiri_boliviensis", # Black-capped ...
+   "Guinea pig" = "Cavia_porcellus",
+   "Human" = "Homo_sapiens",
+   "House mouse" = "Mus_musculus",
+   "Cattle" = "Bos_taurus"
 )
 geom_line_highlight_species <- partial(geom_line, mapping = aes(colour = species), size = 0.3)
 
@@ -836,25 +836,29 @@ plot_ncpr_change_mature <- kappa_caseins_ncpr %>%
   ) +
   scale_color_brewer(
     palette = "Set1",
-    labels = underscore_to_space,
+    breaks = ncpr_highlighted_species,
+    labels = glue("{names(ncpr_highlighted_species)}<br>_{underscore_to_space(ncpr_highlighted_species)}_"),
     guide = guide_legend(
-      nrow = 2,
+      nrow = 1,
+      ncol = 5,
       title.hjust = 0,
       label.hjust = 0,
       title.vjust = 1,
-      label.vjust = 0.5,
+      label.vjust = 0,
       byrow = TRUE,
       direction = "horizontal"
     )
   ) +
   labs(
     y = "net charge per residue",
-    x = "pH"
+    x = "pH",
+    colour = "Species"
   ) +
   theme_bw() +
   theme(
     legend.title = element_blank(),
-    legend.position = "none",
+    legend.position = "bottom",
+    legend.justification = c(0, 1),
     panel.background = element_rect(size = 0.2, colour = "black"),
     panel.grid.major = element_line(size = 0.2),
     plot.tag.position = c(0, 1),
@@ -862,7 +866,12 @@ plot_ncpr_change_mature <- kappa_caseins_ncpr %>%
     panel.spacing = unit(1.2, "line"),
     axis.text = element_text(size = 9, colour = "black"),
     axis.title = element_text(size = 10, colour = "black"),
-    axis.ticks = element_line(size = 0.2, colour = "black")
+    axis.ticks = element_line(size = 0.2, colour = "black"),
+    legend.margin = margin(0, 0, 0, 200),
+    legend.text.align = 0,
+    legend.text = ggtext::element_markdown(size = 8),
+    legend.key.size = unit(10, "pt"),
+    legend.box.spacing = unit(0.05, "line"),
   ) +
   NULL
 
@@ -872,12 +881,12 @@ plot_ncpr_change_parts <- plot_ncpr_change_mature %+%
   (kappa_caseins_ncpr %>% filter(part != "mature")) &
   theme(
     legend.margin = margin(0, 0, 0, 0),
-    legend.text.align = 0,
-    legend.text = element_text(face = "italic", size = 8),
+    legend.text.align = 1,
+    legend.text = ggtext::element_markdown(size = 8),
     legend.key.size = unit(10, "pt"),
-    legend.position = "bottom",
+    legend.position = "none",
     legend.box.spacing = unit(0.05, "line"),
-    legend.justification = c(1, 1),
+    legend.justification = c(1, 0)
     )
 
 # combination of the 2 plots
@@ -905,7 +914,8 @@ plot_ncpr_change_parts <- plot_ncpr_change_mature %+%
       labs(tag = "B")
   ) +
   plot_layout(widths = c(1, 2)) &
-    theme(text = element_text(colour = "black", family = "Arial"))
+    theme(text = element_text(colour = "black", family = "Arial")) &
+    coord_cartesian(clip = "off")
 )
 
 
