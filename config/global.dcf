@@ -14,7 +14,7 @@ libraries: tidyverse, glue, farver,
     XML, rvest, withr, patchwork,
     ggtree, here, assertthat,
     geoscale, magrittr, knitr,
-    kableExtra
+    kableExtra, ggtext
 as_factors: FALSE
 attach_internal_libraries: FALSE
 cache_loaded_data: TRUE
