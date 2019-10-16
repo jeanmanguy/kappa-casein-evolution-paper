@@ -6,13 +6,14 @@
 ![](https://img.shields.io/badge/R%20≥-3.5-green.svg)
 ![](https://img.shields.io/badge/Python%20≥-3-green.svg)
 [![](https://img.shields.io/badge/doi-10.5281/zenodo.2587122-blue.svg)](https://doi.org/10.5281/zenodo.2587122)
-<!-- [![](https://img.shields.io/badge/doi--red.svg)](https://doi.org/) -->
+[![](https://img.shields.io/badge/doi-10.1098/rsos.190939-red.svg)](https://doi.org/10.1098/rsos.190939)
 
 This repository contains the data and code for our paper:
 
-> Jean Manguy and Denis C. Shields, (2019). *Implications of
-> kappa-casein evolutionary diversity for the self-assembly and
-> stabilization of casein micelles*. in preparation \<\>
+> Jean Manguy and Denis C. Shields (2019). *Implications of kappa-casein
+> evolutionary diversity for the self-assembly and stabilization of
+> casein micelles*. Royal Society Open Science
+> <https://doi.org/10.1098/rsos.190939>
 
 This repository is archived on Zenodo:
 [DOI: 10.5281/zenodo.2587122](https://doi.org/10.5281/zenodo.2587122)
@@ -60,3 +61,8 @@ Run in a unix shell
 ``` sh
 R -e "rmarkdown::render('figures_and_tables_paper.Rmd')"
 ```
+
+# Funding
+
+Funded by Enterprise Ireland grants to Food for Health Ireland
+\[TC2013001; TC20180025\].

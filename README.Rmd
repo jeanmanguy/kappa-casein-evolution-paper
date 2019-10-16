@@ -12,8 +12,8 @@ knitr::opts_chunk$set(
 title <- "Implications of kappa-casein evolutionary diversity for the self-assembly and stabilization of casein micelles"
 authors <- "Jean Manguy and Denis C. Shields"
 year <- "2019"
-journal <- "in preparation"
-doi_article <- ""
+journal <- "Royal Society Open Science"
+doi_article <- "10.1098/rsos.190939"
 doi_zenodo <- "10.5281/zenodo.2587122"
 ```
 
@@ -22,11 +22,11 @@ doi_zenodo <- "10.5281/zenodo.2587122"
 `r badger::badge_custom("R ≥", "3.5", color = "green")`
 `r badger::badge_custom("Python ≥", "3", color = "green")`
 `r badger::badge_doi(doi_zenodo, "blue")`
-<!-- `r badger::badge_doi(doi_article, "red")` -->
+`r badger::badge_doi(doi_article, "red")`
 
 This repository contains the data and code for our paper:
 
-> `r authors`, (`r year`). _`r title`_. `r journal` <`r doi_article`>
+> `r authors` (`r year`). _`r title`_. `r journal` <https://doi.org/`r doi_article`>
 
 This repository is archived on Zenodo: [DOI: `r doi_zenodo`](https://doi.org/`r doi_zenodo`)
 
@@ -68,6 +68,6 @@ Run in a unix shell
 R -e "rmarkdown::render('figures_and_tables_paper.Rmd')"
 ```
 
-Funding
+# Funding
 
-Partly funded by an Enterprise Ireland grant to Food for Health Ireland [TC2013001].
+Funded by Enterprise Ireland grants to Food for Health Ireland [TC2013001; TC20180025].

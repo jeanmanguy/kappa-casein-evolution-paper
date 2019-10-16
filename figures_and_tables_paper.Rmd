@@ -23,8 +23,8 @@ knitr::opts_chunk$set(
 title <- "Implications of kappa-casein evolutionary diversity for the self-assembly and stabilization of casein micelles"
 authors <- "Jean Manguy and Denis C. Shields"
 year <- "2019"
-journal <- "in preparation"
-doi_article <- ""
+journal <- "Royal Society Open Science"
+doi_article <- "10.1098/rsos.190939"
 doi_zenodo <- "10.5281/zenodo.2587122"
 ```
 
@@ -32,7 +32,7 @@ doi_zenodo <- "10.5281/zenodo.2587122"
 `r badger::badge_custom("R ≥", "3.5", color = "green")`
 `r badger::badge_custom("Python ≥", "3", color = "green")`
 `r badger::badge_doi(doi_zenodo, "blue")`
-<!-- `r badger::badge_doi(doi_article, "red")` -->
+`r badger::badge_doi(doi_article, "red")`
 
 
 ```{r load-project, message=FALSE, warning=TRUE, echo=FALSE}
